@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/data/firefox_cryptopro_extension_latest.xpi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/geckodriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constants/BaseConst_DEV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constants/BaseConst_ST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MainDKP_DEV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MainPOL_ST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/browser/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/browser/Browser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/browser/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/browser/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/constants/BaseConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest_Normal.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2o1VE724lhyggAFSBpELW7m1nRc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main_Dirt.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.MainAZOL.executor": "Debug",
+    "TestNG.MainAZOL_DO_Find.executor": "Run",
+    "TestNG.MainAZOL_DO_Find.step_01.executor": "Debug",
+    "TestNG.MainDKP_DEV.executor": "Debug",
+    "TestNG.MainDKP_DEV.step_02_post_DKP.executor": "Debug",
+    "TestNG.MainDKP_DEV.step_04_output_DKP.executor": "Debug",
+    "TestNG.MainDKP_DEV.step_04_wait_outputDKP.executor": "Debug",
+    "TestNG.MainLS.executor": "Debug",
+    "TestNG.MainLS.step_01_Autorization_rmdl.executor": "Debug",
+    "TestNG.MainLS.step_02_Autorization_lkl.executor": "Debug",
+    "TestNG.MainLS_DEV.executor": "Debug",
+    "TestNG.MainPOL_DEV.executor": "Debug",
+    "TestNG.MainPOL_DEV.step_01_Autorization_rmdl.executor": "Run",
+    "TestNG.MainPOL_DEV.step_02_Autorization_lkl.executor": "Debug",
+    "TestNG.MainPOL_DEV.step_03_post_POL.executor": "Debug",
+    "TestNG.MainPOL_ST.executor": "Debug",
+    "TestNG.MainPOL_ST.step_02_Autorization_lkl.executor": "Debug",
+    "TestNG.MainTest.executor": "Run",
+    "TestNG.MainTest.step_01.executor": "Run",
+    "TestNG.MainTest_Dirt (1).executor": "Run",
+    "TestNG.MainTest_Dirt.executor": "Debug",
+    "TestNG.MainTest_Dirt.step_01.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/naknyazev/IdeaProjects/My_Testing_2/src/data",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\naknyazev\IdeaProjects\My_Testing_2\src\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\naknyazev\IdeaProjects\My_Testing_2\src\data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.MainDKP_DEV">
+    <configuration name="MainDKP_DEV" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumFirst" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainDKP_DEV" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainDKP_DEV.step_02_post_DKP" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumFirst" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainDKP_DEV" />
+      <option name="METHOD_NAME" value="step_02_post_DKP" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainDKP_DEV.step_04_output_DKP" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumFirst" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainDKP_DEV" />
+      <option name="METHOD_NAME" value="step_04_output_DKP" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainDKP_DEV.step_04_wait_outputDKP" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumFirst" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainDKP_DEV" />
+      <option name="METHOD_NAME" value="step_04_wait_outputDKP" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPOL_DEV" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumFirst" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainPOL_DEV" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.MainDKP_DEV" />
+        <item itemvalue="TestNG.MainDKP_DEV.step_04_output_DKP" />
+        <item itemvalue="TestNG.MainDKP_DEV.step_02_post_DKP" />
+        <item itemvalue="TestNG.MainPOL_DEV" />
+        <item itemvalue="TestNG.MainDKP_DEV.step_04_wait_outputDKP" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="" />
+      <created>1730036955495</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730036955495</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main_Script/Main_Dirt.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main_Script/Main_Dirt.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MainTest_Dirt.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MainTest_Dirt.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MainLS_DEV.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MainPOL_ST.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MainPOL_DEV.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MainDKP_DEV.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/Main_Script/Main_Dirt.java</url>
+          <line>11</line>
+          <properties field="driver" class="Main_Script.Main_Dirt" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="id=\&quot;:r1v:\&quot;]&quot;);" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/My_Testing_1$MainAZOL_DO_Find_step_01.ic" NAME="MainAZOL_DO_Find.step_01 Coverage Results" MODIFIED="1732869386666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
