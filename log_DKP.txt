@@ -34,3 +34,6 @@ https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudE
 РВ-250213-04:00137
 https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=745975bb-e9ef-11ef-9359-3a05138088e9&key=formKeyPudExtractInformation&process=pud_digitize_doc
 https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=745975bb-e9ef-11ef-9359-3a05138088e9&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250213-04:00190
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=fa578b3a-ea02-11ef-9359-3a05138088e9&key=formKeyPudExtractInformation&process=pud_digitize_doc
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=fa578b3a-ea02-11ef-9359-3a05138088e9&key=formKeyPudExtractInformation&process=pud_digitize_doc

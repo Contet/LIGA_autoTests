@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/firefox_cryptopro_extension_latest.xpi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/BaseConst_DEV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/BaseConst_ST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainDKP_DEV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainPOL_ST.java" afterDir="false" />
+    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="Trying">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main_Script/Main_Dirt.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/browser/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/browser/Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/browser/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/browser/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/constants/BaseConst.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest_Dirt.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MainTest_Normal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main_Script/Main_Dirt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/browser/Browser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/browser/Browser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/constants/BaseConst_ST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/theInternet/MainPage.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +29,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Admin &lt;lol_et.ai@bk.ru&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Contet"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Contet/LIGA_autoTests.git",
+    "accountId": "e9d2fbcc-24b0-4b0d-8284-5de82d02699c"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -69,11 +86,11 @@
     "TestNG.MainTest_Dirt.step_01.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/naknyazev/IdeaProjects/My_Testing_2/src/data",
+    "last_opened_file_path": "C:/Users/naknyazev/Documents/IDEAD_BackUP",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.build"
+    "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -162,7 +179,21 @@
       <option name="presentableId" value="Default" />
       <updated>1730036955495</updated>
     </task>
+    <task id="LOCAL-00001" summary="Trying">
+      <option name="closed" value="true" />
+      <created>1739445660387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739445660387</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first and last" />
+    <MESSAGE value="Trying" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -176,16 +207,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/Main_Script/Main_Dirt.java</url>
           <line>16</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/MainTest_Dirt.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/MainTest_Dirt.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/MainLS_DEV.java</url>
