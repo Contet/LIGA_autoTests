@@ -1,3 +1,5 @@
+package LD.dev;
+
 import browser.Browser;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
@@ -8,7 +10,6 @@ import pages.theInternet.MainPage;
 import java.time.Duration;
 
 import static browser.Config.WAIT;
-import static browser.Config.browserType;
 
 public class MainLS_DEV {
 

@@ -1,0 +1,28 @@
+## Определение этапов pipeline
+#stages:
+#  - build
+#  - test
+#  - deploy
+#
+## Задача для сборки приложения
+#build_job:
+#  stage: build
+#  script:
+#    - echo "Building the application..."
+#    - docker build -t myapp .
+#
+## Задача для тестирования приложения
+#test_job:
+#  stage: test
+#  script:
+#    - echo "Running tests..."
+#    - docker run myapp pytest
+#
+## Задача для развертывания приложения
+#deploy_job:
+#  stage: deploy
+#  script:
+#    - echo "Deploying to production..."
+#    - kubectl apply -f deployment.yaml
+#  only:
+#    - main

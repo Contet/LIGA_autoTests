@@ -1,3 +1,5 @@
+package PUD.DKP.dev;
+
 import browser.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -6,11 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 import pages.theInternet.MainPage;
 import java.time.Duration;
-import java.time.LocalDateTime;
 
 import static browser.Config.WAIT;
-import static constants.BaseConst_DEV.xFILE_INPUT;
-import static constants.BaseConst_ST.*;
 
 public class MainDKP_DEV {
     private WebDriver driver;
@@ -68,7 +67,7 @@ public class MainDKP_DEV {
             String date = Main.DateNow();
             Main.Get("https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/documents");
             Main.Send("//*[@id=\":r3:\"]", "купли");
-            Main.TimeOut(2000);
+            Main.TimeOut(3000);
             Main.ArrowDown();
             Main.Enter();
             Main.Click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div/div[2]/div/div[3]/button[2]");
@@ -136,7 +135,7 @@ public class MainDKP_DEV {
         Main.SendDate("//*[@id=\":r6:\"]", date);
         Main.SendDate("//*[@id=\":r8:\"]", end_date);
 // Сведения о продавце
-        Main.ListFirst("//*[@id=\":r2k:\"]", 1);
+        Main.ListDown("//*[@id=\":r2k:\"]", 1);
         Main.Send("//*[@id=\":r1a:\"]", "Дубки, кв. дубовый, дувецкое");
         Main.Send("//*[@id=\":r1b:\"]", "Дубки, кв. дубовый, дувецкое, дубни");
         Main.Send("//*[@id=\":r1c:\"]", "7970476159");
@@ -161,7 +160,7 @@ public class MainDKP_DEV {
         Main.SendDate("//*[@id=\":r25:\"]", date);
 // Сведения о заявителе
 
-        Main.ListFirst("//*[@id=\":ra:\"]", 1);
+        Main.ListDown("//*[@id=\":ra:\"]", 1);
         Main.Click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div[1]/div/div/form/div/div/div[1]/div[9]/div[1]/div[3]/div/button");
         Main.Send("//*[@id=\":r3s:\"]", "ОРГАНИЗАЦИЯ -1635872784");
         Main.TimeOut(2000);
@@ -203,16 +202,16 @@ public class MainDKP_DEV {
         Main.Click("//*[@id=\":r1g:\"]");
         Main.Enter();
 
-        Main.ListFirst("//*[@id=\":r4b:\"]", 1);
+        Main.ListDown("//*[@id=\":r4b:\"]", 1);
         Main.Send("//*[@id=\":r4c:\"]", Main.RandomNum(4));
         Main.SendDate("//*[@id=\":r4d:\"]", date);
-        Main.ListFirst("//*[@id=\":r2m:\"]", 1);
-        Main.ListFirst("//*[@id=\":r2o:\"]", 1);
+        Main.ListDown("//*[@id=\":r2m:\"]", 1);
+        Main.ListDown("//*[@id=\":r2o:\"]", 1);
 // Цель приобретения
         Main.Send("//*[@id=\":r27:\"]", "Вывоз в ...");
 // Характеристика лесных насаждений
-        Main.ListFirst("//*[@id=\":r2q:\"]", 1);
-        Main.ListFirst("//*[@id=\":r2s:\"]", 1);
+        Main.ListDown("//*[@id=\":r2q:\"]", 1);
+        Main.ListDown("//*[@id=\":r2s:\"]", 1);
         Main.Send("//*[@id=\":r28:\"]", "500");
         Main.SendDate("//*[@id=\":r29:\"]", date);
         Main.Send("//*[@id=\":r2b:\"]", "Прекрасные условия");
@@ -236,22 +235,22 @@ public class MainDKP_DEV {
         Main.Send("//*[@id=\":rb:\"]", "180000000");
         Main.Send("//*[@id=\":r19:\"]", "180000000");
 // Объем заготовки
-        Main.ListFirst("//*[@id=\":rc:\"]", 2);
+        Main.ListDown("//*[@id=\":rc:\"]", 2);
         Main.TimeOut(1000);
 
-        Main.ListFirst("//*[@id=\":r4f:\"]", 2);
+        Main.ListDown("//*[@id=\":r4f:\"]", 2);
         Main.TimeOut(1000);
 
         Main.Send("//*[@id=\":r4v:\"]", "29:3:10:66"); // Учетный номер квартала
 
-        Main.ListFirst("//*[@id=\":r4h:\"]", 2);
+        Main.ListDown("//*[@id=\":r4h:\"]", 2);
 
         Main.Send("//*[@id=\":r50:\"]", "29:3:10:66:38"); // Учетный номер выдела
 
         Main.Send("//*[@id=\":r4i:\"]", "500");
-        Main.ListFirst("//*[@id=\":r4p:\"]", 1);
-        Main.ListFirst("//*[@id=\":r4r:\"]", 1);
-        Main.ListFirst("//*[@id=\":r4t:\"]", 1);
+        Main.ListDown("//*[@id=\":r4p:\"]", 1);
+        Main.ListDown("//*[@id=\":r4r:\"]", 1);
+        Main.ListDown("//*[@id=\":r4t:\"]", 1);
         Main.Send("//*[@id=\":r4j:\"]", Main.RandomNum(4));
         Main.Send("//*[@id=\":r4k:\"]", Main.RandomNum(4));
         Main.Send("//*[@id=\":r4l:\"]", Main.RandomNum(4));

@@ -1,3 +1,5 @@
+package POL.st;
+
 import browser.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -99,7 +101,7 @@ public class MainPOL_ST {
             Main.TimeOut(3000);
 
             String bizKey = Main.GetText(xBIZ_KEY_TEXT);
-            Main.WriteTextToFile(bizKey, "output.txt");
+            Main.WriteTextToFile(bizKey, "log_POL.txt");
         }
     }
 }

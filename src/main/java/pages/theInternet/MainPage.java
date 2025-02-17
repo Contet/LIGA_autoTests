@@ -1,7 +1,5 @@
 package pages.theInternet;
 
-import com.google.common.base.Predicate;
-import com.sun.tools.javac.Main;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,11 +13,13 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
-import static browser.Config.WAIT;
+
 
 public class MainPage {
     protected WebDriver driver;
     protected Actions actions;
+
+
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
@@ -35,6 +35,7 @@ public class MainPage {
         }
     }
 
+
     public boolean IsDisp(String key){
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Ожидание 10 секунд
@@ -48,9 +49,9 @@ public class MainPage {
 
     public void Click(String key){
 
-        TimeOut(1000);
+//        TimeOut(1000);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
         WebElement button = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(key)));
 
@@ -61,6 +62,8 @@ public class MainPage {
         button.click();
 
     }
+
+
     public void ClickCSS(String key){
         TimeOut(100);
         while(!IsDisp(key)){
@@ -68,13 +71,15 @@ public class MainPage {
         }
         driver.findElement(By.cssSelector(String.valueOf(key))).click();
     }
+
+
     public void Send(String key, String value) {
-        TimeOut(100);
         if(IsDisp(key)){
             driver.findElement(By.xpath(String.valueOf(key))).sendKeys(value);
         }
-        else{TimeOut(1000);}
     }
+
+
     public void SendDate(String key, String value) {
         Click(key);
         TimeOut(100);
@@ -84,14 +89,18 @@ public class MainPage {
         else{TimeOut(1000);}
     }
 
+
     public void OpenUrl(String key){
         driver.get(key);
     }
+
 
     public void Enter(){
         Actions actions = new Actions(driver);
         actions.sendKeys(Keys.ENTER).perform();
     }
+
+
     public void Scroll_down(String key){
 
         WebElement body = driver.findElement(By.xpath(key));
@@ -99,30 +108,48 @@ public class MainPage {
         actions.moveToElement(body).sendKeys(org.openqa.selenium.Keys.PAGE_DOWN).perform();
     }
 
+
     public void ArrowDown(){
         Actions actions = new Actions(driver);
 
         // Эмулируем нажатие клавиши "Стрелка вниз"
         actions.sendKeys(Keys.ARROW_DOWN).perform();
         }
+
+
+    public void ArrowUp(){
+        Actions actions = new Actions(driver);
+
+        // Эмулируем нажатие клавиши "Стрелка вниз"
+        actions.sendKeys(Keys.ARROW_UP).perform();
+    }
+
     public void Refresh(){
         driver.navigate().refresh();
     }
+
+
     public String GetText(String key) {
         WebElement element = driver.findElement(By.xpath(key));
         return element.getText();
     }
+
+
     public void WriteTextToFile(String text, String fileName) {
-        try (FileWriter fileWriter = new FileWriter(fileName, true)) { // true для добавления в конец файла
+        String filePath = "src/log/" + fileName;
+        try (FileWriter fileWriter = new FileWriter(filePath, true)) { // true для добавления в конец файла
             fileWriter.write(text + "\n"); // Добавляем новую строку
-            System.out.println("Текст успешно записан в файл: " + fileName);
+            System.out.println("Лог успешно записан в файл: " + fileName);
         } catch (IOException e) {
             System.err.println("Ошибка записи в файл: " + e.getMessage());
         }
     }
+
+
     public void Get(String key){
         driver.get(key);
     }
+
 
     public String DateNow(){
         LocalDateTime currentDateTime = LocalDateTime.now();
@@ -134,23 +161,16 @@ public class MainPage {
         String formattedDate = currentDateTime.format(formatter);
 
         // Выводим результат
-        System.out.println("Текущая дата и время: " + formattedDate);
+        System.out.println("Текущая дата в формате ddMMYYYY: " + formattedDate);
         return formattedDate;
     }
+
+
     public String GetUrl(String key){
         WebElement button = driver.findElement(By.xpath(key)); // Замените на ваш локатор
         String url = button.getAttribute("href");
         return url;
     }
-
-//    public String RandomNum(int n){
-//        // Создание объекта Random
-//        Random random = new Random();
-//        // Генерация случайного целого числа (например, от 0 до 100)
-//        int randomNumber = random.nextInt(n);
-//        String randomString = Integer.toString(randomNumber);
-//        return randomString;
-//    }
 
 
     public String RandomDateToday(){
@@ -168,13 +188,24 @@ public class MainPage {
         return formattedDate;
     }
 
-    public void ListFirst(String key, Integer k){
+
+    public void ListDown(String key, Integer k){
         Click(key);
         for(int i = 0; i < k; i++){
             ArrowDown();
         }
         Enter();
     }
+
+
+    public void ListUp(String key, Integer k){
+        Click(key);
+        for(int i = 0; i < k; i++){
+            ArrowUp();
+        }
+        Enter();
+    }
+
     public String RandomNum(Integer n){
         if (n <= 0) {
         throw new IllegalArgumentException("Количество цифр должно быть положительным числом.");
@@ -193,6 +224,7 @@ public class MainPage {
 
         return String.valueOf(sb);
     }
+
 
     public void CheckBoxTrue(String key){
         WebElement checkbox = driver.findElement(By.xpath(key));

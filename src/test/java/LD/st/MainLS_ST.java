@@ -1,15 +1,13 @@
+package LD.st;
+
 import browser.Browser;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.theInternet.MainPage;
 import java.time.Duration;
 
-import static browser.Config.browserType;
 import static browser.Config.WAIT;
 
 public class MainLS_ST {
