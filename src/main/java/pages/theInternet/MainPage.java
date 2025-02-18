@@ -206,6 +206,7 @@ public class MainPage {
         Enter();
     }
 
+
     public String RandomNum(Integer n){
         if (n <= 0) {
         throw new IllegalArgumentException("Количество цифр должно быть положительным числом.");

@@ -43,13 +43,17 @@ public class Browser {
             case "fire":
 
                 // Укажите путь к geckodriver
-                //   System.setProperty("webdriver.gecko.driver", "C:\\Users\\naknyazev\\IdeaProjects\\My_Testing_2\\src\\data");
+                   System.setProperty("webdriver.gecko.driver", "src/data/geckodriver.exe");
 
-                //  Proxy proxy = new Proxy();
-                //  proxy.setHttpProxy("192.168.158.9:1080");
+                  Proxy proxy = new Proxy();
+//                  proxy.setHttpProxy("192.168.158.8:1080");
+                  proxy.setSocksProxy("192.168.158.9:1080");
+                  proxy.setSocksVersion(5);
 
                 // Настройте опции Firefox
                 FirefoxOptions options_fr = new FirefoxOptions();
+                // Укажите путь к исполняемому файлу Firefox
+                options_fr.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
 
                 // Создаем профиль Firefox и добавляем расширение
                 FirefoxProfile profile = new FirefoxProfile();
@@ -57,7 +61,7 @@ public class Browser {
 
                 // Применяем профиль к нашим опциям
                 options_fr.setProfile(profile);
-                //   options_fr.setProxy(proxy);
+                options_fr.setProxy(proxy);
 
                 // Создайте экземпляр WebDriver с заданными опциями
                 driver = new FirefoxDriver(options_fr);
