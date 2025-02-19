@@ -233,4 +233,19 @@ public class MainPage {
 // Используем JavaScript для установки состояния checked
         ((JavascriptExecutor) driver).executeScript("arguments[0].checked = true;", checkbox);
     }
+
+
+    public void WaitTask(String key){
+        if(key == null){
+            key = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div[3]/div/div/div/div[2]/div[2]/div/div/div/div/div[7]/a"; // Значение по умолчанию
+        }
+
+        while(!IsDisp(key)){
+            Refresh();
+        }
+        Click(key);
+    }
+
+
+
 }

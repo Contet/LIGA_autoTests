@@ -17,6 +17,8 @@ public class MainPOL_DEV {
 
     private WebDriver driver;
     private MainPage Main;
+    public String bizKey;
+    public String url_tasks = "https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/processes/";
 
     @BeforeTest
     public void beforeTest() {
@@ -125,16 +127,21 @@ public class MainPOL_DEV {
             Main.TimeOut(3000);
             Main.Refresh();
             Main.TimeOut(2000);
-            String bizKey = Main.GetText(xBIZ_KEY);
+            bizKey = Main.GetText(xBIZ_KEY);
             Main.WriteTextToFile(bizKey, "log_POL.txt");
         }
     }
-    @Test(enabled = false)
+    @Test
     public void step_04_Autorization_rmdl(){
 
         driver.get(String.valueOf("https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/documents"));
 
         Main.Click("//*[@id=\"app\"]/div[2]/div[2]/div[3]/button");
+       if(!Main.IsDisp("//*[@id=\"login\"]")) {
+           Main.Click("//*[@id=\"app\"]/div[2]/div[2]/div[3]/button");
+           Main.Click("//*[@id=\"app\"]/div[2]/div[2]/div[3]/button");
+           Main.Click("/html/body/esia-root/div/esia-login/div/div[1]/form/esia-login-found/div/div[2]/button");
+       }
         Main.Send("//*[@id=\"login\"]", "+79524945159");
         Main.Send("//*[@id=\"password\"]", "Dy2-6bn3WU" );
         Main.Click("/html/body/esia-root/div/esia-login/div/div[1]/form/div[4]/button");
@@ -146,5 +153,35 @@ public class MainPOL_DEV {
         Main.TimeOut(1000);
 
     }
+    @Test
+    public void step_05_Wait_POL(){
+        String xTASK = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div[3]/div/div/div/div[2]/div[2]/div/div/div/div/div[7]/a";
+
+        Main.TimeOut(1000);
+        Main.Get(url_tasks + bizKey);
+        Main.TimeOut(2000);
+
+        Main.WaitTask(xTASK);
+    }
+
+    @Test
+    public void step_06_POL_1(){
+        Main.TimeOut(2000);
+        Main.Click("/html/body/esia-root/div/esia-login/div/div[1]/form/esia-login-found/div/div[2]/button");
+        Main.TimeOut(2000);
+        Main.Click("//*[@id=\"panel-task\"]/div/div/div[3]/button[1]");
+        Main.Click("/html/body/div[3]/div[3]/div/div/div/button[2]");
+        Main.Click("//*[@id=\"app\"]/div[4]/div/div/div/div/div/div[1]/span/svg");
+        Main.Get(url_tasks + bizKey);
+        step_05_Wait_POL();
+    }
+
+    @Test
+    public void step_07_POL_2(){
+        Main.TimeOut(2000);
+
+    }
+
+
 
 }

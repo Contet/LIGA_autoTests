@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="0.8 beta release">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/log/log_DKP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_DKP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log/log_NEDRA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_NEDRA.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/browser/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/browser/Browser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log/log_POL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_POL.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/browser/Browser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/browser/Browser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/theInternet/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/theInternet/MainPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +79,7 @@
     "TestNG.MainPOL_DEV.step_03_post_POL.executor": "Debug",
     "TestNG.MainPOL_ST.executor": "Debug",
     "TestNG.MainPOL_ST.step_02_Autorization_lkl.executor": "Debug",
+    "TestNG.MainSendPOL_DEV.executor": "Debug",
     "TestNG.MainTest.executor": "Run",
     "TestNG.MainTest.step_01.executor": "Run",
     "TestNG.MainTest_Dirt (1).executor": "Run",
@@ -91,7 +88,7 @@
     "TestNG.Main_Nedra_DEV.executor": "Debug",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/naknyazev/IdeaProjects/My_Testing_2/src/test/java/PUD/NEDRA",
+    "last_opened_file_path": "C:/Users/naknyazev/IdeaProjects/My_Testing_2/src/data/DKP",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -100,6 +97,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\naknyazev\IdeaProjects\My_Testing_2\src\data\DKP" />
       <recent name="C:\Users\naknyazev\IdeaProjects\My_Testing_2\src\test\java\PUD\NEDRA" />
       <recent name="C:\Users\naknyazev\IdeaProjects\My_Testing_2\src\test\java\PUD\DKP" />
       <recent name="C:\Users\naknyazev\IdeaProjects\My_Testing_2\src\test\java\POL" />
@@ -109,10 +107,11 @@
       <recent name="C:\Users\naknyazev\IdeaProjects\My_Testing_2\src\data" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="POL.dev" />
       <recent name="PUD.DKP.st" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MainDKP_DEV">
+  <component name="RunManager" selected="TestNG.MainPOL_DEV">
     <configuration name="MainDKP_DEV" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
       <option name="PACKAGE_NAME" value="" />
@@ -183,10 +182,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MainPOL_DEV" />
         <item itemvalue="TestNG.MainDKP_DEV" />
         <item itemvalue="TestNG.MainDKP_ST" />
         <item itemvalue="TestNG.Main_Nedra_DEV" />
-        <item itemvalue="TestNG.MainPOL_DEV" />
         <item itemvalue="TestNG.MainDKP_DEV.step_04_output_DKP" />
       </list>
     </recent_temporary>
@@ -227,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739779812175</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="0.8 beta release">
+      <option name="closed" value="true" />
+      <created>1739862897679</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739862897679</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,7 +295,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java</url>
-          <line>30</line>
+          <line>31</line>
           <option name="timeStamp" value="158" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
