@@ -54,7 +54,7 @@ public class MainPOL_ST {
             if (Main.IsDisp(xCLOSE_ICON)) {
                 Main.Click(xCLOSE_ICON);
             }
-            Main.TimeOut(1000);
+            Main.TimeOut(2000);
             Main.Click(xNEXT_BUTTON);
             Main.TimeOut(3000);
 
@@ -68,6 +68,7 @@ public class MainPOL_ST {
             Main.Click(xSIGN_DOCUMENT_BUTTON);
             Main.Click(xSIGNATURE_CONTAINER);
             Main.Click(xCERTIFICATE_SELECTION_MENU);
+            Main.TimeOut(1000);
             Main.Click(xCONFIRM_SIGNATURE_BUTTON);
 
             while (!Main.IsDisp("/html/body/div[3]/div[3]/div/main/form/div/div[3]/div/div/button")) {
@@ -79,6 +80,7 @@ public class MainPOL_ST {
             Main.ArrowDown();
             Main.ArrowDown();
             Main.Enter();
+            Main.TimeOut(1000);
             Main.Click(xFINAL_SUBMIT_BUTTON);
             Main.TimeOut(1000);
             Main.Click(xFINISH_BUTTON);

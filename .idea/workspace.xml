@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="0.8 beta release">
+    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="0.8.2 beta release">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/st/Main_Nedra_ST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/log/log_DKP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_DKP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log/log_POL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_POL.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log/log_NEDRA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_NEDRA.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POL/st/MainPOL_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POL/st/MainPOL_ST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/theInternet/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/theInternet/MainPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +89,7 @@
     "TestNG.MainTest_Dirt.executor": "Debug",
     "TestNG.MainTest_Dirt.step_01.executor": "Run",
     "TestNG.Main_Nedra_DEV.executor": "Debug",
+    "TestNG.Main_Nedra_ST.executor": "Debug",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/naknyazev/IdeaProjects/My_Testing_2/src/data/DKP",
@@ -107,28 +111,17 @@
       <recent name="C:\Users\naknyazev\IdeaProjects\My_Testing_2\src\data" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="PUD.NEDRA.st" />
       <recent name="POL.dev" />
       <recent name="PUD.DKP.st" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MainPOL_DEV">
+  <component name="RunManager" selected="TestNG.MainDKP_DEV">
     <configuration name="MainDKP_DEV" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.MainDKP_DEV" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainDKP_DEV.step_04_output_DKP" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumFirst" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.MainDKP_DEV" />
-      <option name="METHOD_NAME" value="step_04_output_DKP" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -163,16 +156,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main_Nedra_DEV" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPOL_ST" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PUD.NEDRA.dev.*" />
+          <option name="PATTERN" value="POL.st.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="PUD.NEDRA.dev" />
-      <option name="MAIN_CLASS_NAME" value="PUD.NEDRA.dev.Main_Nedra_DEV" />
+      <option name="PACKAGE_NAME" value="POL.st" />
+      <option name="MAIN_CLASS_NAME" value="POL.st.MainPOL_ST" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_Nedra_ST" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumFirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PUD.NEDRA.st.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PUD.NEDRA.st" />
+      <option name="MAIN_CLASS_NAME" value="PUD.NEDRA.st.Main_Nedra_ST" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -182,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MainPOL_DEV" />
         <item itemvalue="TestNG.MainDKP_DEV" />
         <item itemvalue="TestNG.MainDKP_ST" />
-        <item itemvalue="TestNG.Main_Nedra_DEV" />
-        <item itemvalue="TestNG.MainDKP_DEV.step_04_output_DKP" />
+        <item itemvalue="TestNG.Main_Nedra_ST" />
+        <item itemvalue="TestNG.MainPOL_ST" />
+        <item itemvalue="TestNG.MainPOL_DEV" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739862897679</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="0.8.2 beta release">
+      <option name="closed" value="true" />
+      <created>1739960004404</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739960004404</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +271,8 @@
     <MESSAGE value="Trying" />
     <MESSAGE value="Trying_02" />
     <MESSAGE value="0.8 beta release" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.8 beta release" />
+    <MESSAGE value="0.8.2 beta release" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.8.2 beta release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -274,29 +293,49 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/POL/st/MainPOL_ST.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
           <line>30</line>
           <option name="timeStamp" value="129" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
-          <line>131</line>
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java</url>
-          <line>230</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java</url>
           <line>31</line>
           <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/POL/st/MainPOL_ST.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/NEDRA/st/Main_Nedra_ST.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/NEDRA/st/Main_Nedra_ST.java</url>
+          <line>214</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/NEDRA/st/Main_Nedra_ST.java</url>
+          <line>216</line>
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java</url>
+          <line>279</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
+          <line>275</line>
+          <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/Main_Script/Main_Dirt.java</url>
@@ -314,5 +353,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/My_Testing_1$MainAZOL_DO_Find_step_01.ic" NAME="MainAZOL_DO_Find.step_01 Coverage Results" MODIFIED="1732869386666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/My_Testing_2$MainDKP_ST.ic" NAME="MainDKP_ST Coverage Results" MODIFIED="1740383087759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>PUD.DKP.st.*</FILTER>
+    </SUITE>
   </component>
 </project>

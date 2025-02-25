@@ -55,6 +55,7 @@ public class MainPage {
 
         WebElement button = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(key)));
 
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(key)));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(key)));
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", button);

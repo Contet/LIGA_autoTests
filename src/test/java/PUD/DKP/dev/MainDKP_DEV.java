@@ -61,7 +61,7 @@ public class MainDKP_DEV {
 
     }
 
-    @Test
+    @Test(enabled = true)
     public void step_02_post_DKP() {
         for (int i = 1; i < 2; i++) {
             String date = Main.DateNow();
@@ -92,13 +92,14 @@ public class MainDKP_DEV {
 
             Main.Click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[3]/div/button");
             Main.Click("/html/body/div[3]/div[3]/div/div/div[2]/button[2]");
+            Main.TimeOut(1000);
             cartDoc = Main.GetUrl("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[1]/div/a");
             Main.Click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[1]/div/a");
             Main.TimeOut(2000);
         }
     }
 
-    @Test
+    @Test(enabled = true)
     public void step_03_wait_outputDKP() {
 
         Main.TimeOut(5000);
@@ -117,11 +118,12 @@ public class MainDKP_DEV {
         Main.Click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div[3]/div/div/div/div[2]/div[2]/div/div/div/div/div[7]/a");
     }
 
-    @Test
+    @Test(enabled = true)
     public void step_04_output_DKP() {
 
         Main.Get(urlPudOutputter);
-//        Main.Get("https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/view/ddd40dd5-e9e1-11ef-9359-3a05138088e9");
+
+//        Main.Get("https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/view/7ba5c008-f353-11ef-bee5-9e654c317ca0");
         Main.TimeOut(3000);
         Main.Refresh();
         Main.TimeOut(3000);
@@ -135,132 +137,141 @@ public class MainDKP_DEV {
         Main.SendDate("//*[@id=\":r6:\"]", date);
         Main.SendDate("//*[@id=\":r8:\"]", end_date);
 // Сведения о продавце
-        Main.ListDown("//*[@id=\":r2k:\"]", 1);
-        Main.Send("//*[@id=\":r1a:\"]", "Дубки, кв. дубовый, дувецкое");
-        Main.Send("//*[@id=\":r1b:\"]", "Дубки, кв. дубовый, дувецкое, дубни");
-        Main.Send("//*[@id=\":r1c:\"]", "7970476159");
-        Main.Send("//*[@id=\":r1d:\"]", "426944808");
-        Main.Send("//*[@id=\":r1e:\"]", "1097793655222");
-        Main.Send("//*[@id=\":r1f:\"]", "1097793655222");
+        Main.Click("/html/body/div[1]/div[3]/main/div[1]/div[2]/div[1]/div/div/form/div/div/div[1]/div[8]/div[2]/div/button");
+
+        try {
+            Main.Send("//*[@id=\":r33:\"]", "7708237747");
+        }
+        catch (Exception e){
+            Main.Send("//*[@id=\":r43:\"]", "7708237747");
+        }
+
+        Main.TimeOut(1000);
+        Main.Click("/html/body/div[3]/div[3]/div/div[1]/form/div/div[2]/button");
+        Main.TimeOut(1000);
+        Main.Click("/html/body/div[3]/div[3]/div/div[1]/div/div[2]/div[2]/div/div/div/div/div[1]/span");
+        Main.Click("/html/body/div[3]/div[3]/div/div[2]/div/button[2]");
+        Main.TimeOut(2000);
+
+        Main.ListDown("//*[@id=\":r2l:\"]", 1);
+
+        Main.Send("//*[@id=\":r1c:\"]", "Дубки, кв. дубовый, дувецкое");
+        Main.Send("//*[@id=\":r1g:\"]", Main.RandomNum(5));
 // Банковские реквизиты
-        Main.Send("//*[@id=\":r1m:\"]", "Дубки, кв. дубовый, дувецкое");
-        Main.Send("//*[@id=\":r1n:\"]", Main.RandomNum(20));
+        Main.Send("//*[@id=\":r1n:\"]", "Дубки, кв. дубовый, дувецкое");
         Main.Send("//*[@id=\":r1o:\"]", Main.RandomNum(20));
-        Main.Send("//*[@id=\":r1p:\"]", Main.RandomNum(9));
+        Main.Send("//*[@id=\":r1p:\"]", Main.RandomNum(20));
+        Main.Send("//*[@id=\":r1q:\"]", Main.RandomNum(9));
 // Данные сотрудника
-        Main.Send("//*[@id=\":r1q:\"]", "Павел");
-        Main.Send("//*[@id=\":r1r:\"]", "Орлов");
-        Main.Send("//*[@id=\":r1s:\"]", "Автоматизирович");
-        Main.Send("//*[@id=\":r1t:\"]", "Автоматизатор");
-        Main.Send("//*[@id=\":r1u:\"]", "Уполномоченный робот");
-        Main.Send("//*[@id=\":r1v:\"]", Main.RandomNum(6));
-        Main.SendDate("//*[@id=\":r20:\"]", date);
-        Main.Send("//*[@id=\":r22:\"]", "+79999999999");
-        Main.SendDate("//*[@id=\":r23:\"]", date);
-        Main.SendDate("//*[@id=\":r25:\"]", date);
+        Main.Send("//*[@id=\":r1r:\"]", "Павел");
+        Main.Send("//*[@id=\":r1s:\"]", "Орлов");
+        Main.Send("//*[@id=\":r1t:\"]", "Автоматизирович");
+        Main.Send("//*[@id=\":r1u:\"]", "Автоматизатор");
+        Main.Send("//*[@id=\":r1v:\"]", "Уполномоченный робот");
+        Main.Send("//*[@id=\":r20:\"]", Main.RandomNum(6));
+        Main.SendDate("//*[@id=\":r21:\"]", date);
+        Main.SendDate("//*[@id=\":r23:\"]", "+79999999999");
+        Main.SendDate("//*[@id=\":r24:\"]", date);
+        Main.SendDate("//*[@id=\":r26:\"]", "Организация ООО РГА");
 // Сведения о заявителе
 
-        Main.ListDown("//*[@id=\":ra:\"]", 1);
-        Main.Click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div[1]/div/div/form/div/div/div[1]/div[9]/div[1]/div[3]/div/button");
-        Main.Send("//*[@id=\":r3s:\"]", "ОРГАНИЗАЦИЯ -1635872784");
+        Main.ListDown("//*[@id=\":rb:\"]", 1);
+        Main.Click("/html/body/div[1]/div[3]/main/div[1]/div[2]/div[1]/div/div/form/div/div/div[1]/div[9]/div[1]/div[3]/div/button");
+        Main.Send("//*[@id=\":r4d:\"]", "ОРГАНИЗАЦИЯ -1635872784");
         Main.TimeOut(2000);
         Main.Click("/html/body/div[3]/div[3]/div/div[1]/form/div/div[2]/button");
         Main.TimeOut(3000);
-            try{
-                Main.Click("/html/body/div[3]/div[3]/div/div[1]/div/div[2]/div[2]/div/div/div/div/div[1]/span");
-                Main.TimeOut(1000);
-                Main.Click("/html/body/div[3]/div[3]/div/div[2]/div/button[2]");
-                Main.TimeOut(2000);
-            }
-            catch (Exception e){
-                System.out.println("Контрагент не найден");
-            }
-
-        Main.Send("//*[@id=\":r36:\"]", "г. Дубки, ул. Дубовая, кв. Дубовый, д. 12");
-        Main.Send("//*[@id=\":r3a:\"]", "glinkov@fciit.ru");
-// Сведения о представителе
-        Main.Send("//*[@id=\":r3c:\"]", "Иванов");
-        Main.Send("//*[@id=\":r3d:\"]", "Иван");
-        Main.Send("//*[@id=\":r3e:\"]", "Автоматизирович");
-        Main.Send("//*[@id=\":r3f:\"]", Main.RandomNum(11));
-// Тип документа
-        Main.Click("//*[@id=\":r3q:\"]");
-        for(int i = 0; i < 12; i++){
-            Main.ArrowDown();
+        try{
+            Main.Click("/html/body/div[3]/div[3]/div/div[1]/div/div[2]/div[2]/div/div/div/div[1]/div[1]/span");
+            Main.TimeOut(1000);
+            Main.Click("/html/body/div[3]/div[3]/div/div[2]/div/button[2]");
+            Main.TimeOut(2000);
         }
-        Main.Enter();
-        Main.Send("//*[@id=\":r3g:\"]", Main.RandomNum(4));
-        Main.Send("//*[@id=\":r3h:\"]", Main.RandomNum(8));
-        Main.Send("//*[@id=\":r3i:\"]", "УМДВ АВТОМАТИЗИРОВЛЯНДИИ ПО ГОРОДУ АВТОМАТИЗАТОР");
-        Main.SendDate("//*[@id=\":r3j:\"]", "01012003");
-        Main.Send("//*[@id=\":r3l:\"]", Main.RandomNum(6));
-        Main.Send("//*[@id=\":r3m:\"]", "г. Автоматизатор, ул. От слова, д. Матиз");
-        Main.Send("//*[@id=\":r3n:\"]", "г. Автоматизатор, ул. От слова, д. Матиз");
-        Main.Send("//*[@id=\":r3o:\"]", "current_email_adress@bk.ru");
-        Main.Send("//*[@id=\":r3p:\"]", "+79523995155");
-// Предмет договора
-        Main.Click("//*[@id=\":r1g:\"]");
-        Main.Enter();
+        catch (Exception e){
+            System.out.println("Контрагент не найден");
+        }
 
-        Main.ListDown("//*[@id=\":r4b:\"]", 1);
-        Main.Send("//*[@id=\":r4c:\"]", Main.RandomNum(4));
-        Main.SendDate("//*[@id=\":r4d:\"]", date);
-        Main.ListDown("//*[@id=\":r2m:\"]", 1);
-        Main.ListDown("//*[@id=\":r2o:\"]", 1);
+        Main.Send("//*[@id=\":r3r:\"]", "glinkov@fciit.ru");
+// Сведения о представителе
+        Main.Send("//*[@id=\":r3t:\"]", "Иванов");
+        Main.Send("//*[@id=\":r3u:\"]", "Иван");
+        Main.Send("//*[@id=\":r3v:\"]", "Автоматизирович");
+        Main.Send("//*[@id=\":r40:\"]", Main.RandomNum(11));
+// Тип документа
+        Main.ListDown("//*[@id=\":r4b:\"]", 12);
+        Main.Send("//*[@id=\":r41:\"]", Main.RandomNum(4));
+        Main.Send("//*[@id=\":r42:\"]", Main.RandomNum(8));
+        Main.Send("//*[@id=\":r43:\"]", "УМДВ АВТОМАТИЗИРОВЛЯНДИИ ПО ГОРОДУ АВТОМАТИЗАТОР");
+        Main.SendDate("//*[@id=\":r44:\"]", "01012003");
+        Main.Send("//*[@id=\":r46:\"]", Main.RandomNum(6));
+        Main.Send("//*[@id=\":r47:\"]", "г. Автоматизатор, ул. От слова, д. Матиз");
+        Main.Send("//*[@id=\":r48:\"]", "г. Автоматизатор, ул. От слова, д. Матиз");
+        Main.Send("//*[@id=\":r49:\"]", "current_email_adress@bk.ru");
+        Main.Send("//*[@id=\":r4a:\"]", "+79523995155");
+// Предмет договора
+        Main.ListUp("//*[@id=\":r1h:\"]", 1);
+        Main.ListDown("//*[@id=\":r4s:\"]", 1);
+        Main.Send("//*[@id=\":r4t:\"]", Main.RandomNum(4));
+        Main.SendDate("//*[@id=\":r4u:\"]", date);
+        Main.ListDown("//*[@id=\":r2n:\"]", 1);
+        Main.ListDown("//*[@id=\":r2p:\"]", 1);
 // Цель приобретения
-        Main.Send("//*[@id=\":r27:\"]", "Вывоз в ...");
+        Main.Send("//*[@id=\":r28:\"]", "Вывоз в ...");
 // Характеристика лесных насаждений
-        Main.ListDown("//*[@id=\":r2q:\"]", 1);
-        Main.ListDown("//*[@id=\":r2s:\"]", 1);
-        Main.Send("//*[@id=\":r28:\"]", "500");
-        Main.SendDate("//*[@id=\":r29:\"]", date);
-        Main.Send("//*[@id=\":r2b:\"]", "Прекрасные условия");
-        Main.Send("//*[@id=\":r2c:\"]", "500");
-        Main.SendDate("//*[@id=\":r2d:\"]", end_date);
-        Main.Send("//*[@id=\":r2h:\"]", "Очистка дергающим методом");
-        Main.Send("//*[@id=\":r1h:\"]", "Крыжовник");
+        Main.ListDown("//*[@id=\":r2r:\"]", 1);
+        Main.ListDown("//*[@id=\":r2t:\"]", 1);
+        Main.Send("//*[@id=\":r29:\"]", "500");
+        Main.SendDate("//*[@id=\":r2a:\"]", date);
+        Main.Send("//*[@id=\":r2c:\"]", "Прекрасные условия");
+        Main.Send("//*[@id=\":r2d:\"]", "500");
+        Main.SendDate("//*[@id=\":r2e:\"]", end_date);
+        Main.Send("//*[@id=\":r2i:\"]", "Очистка дергающим методом");
+        Main.Send("//*[@id=\":r1i:\"]", "Крыжовник");
 // Местоположение лесных насаждений
-        Main.Send("//*[@id=\":r2u:\"]", "Вельское");
+        Main.Send("//*[@id=\":r2v:\"]", "Вельское");
         Main.TimeOut(1000);
         for(int i = 0; i < 3; i++){
             Main.ArrowDown();
         }
         Main.Enter();
 
-        Main.Send("//*[@id=\":r30:\"]", "Тегринское");
+        Main.Send("//*[@id=\":r31:\"]", "Тегринское");
         Main.TimeOut(1000);
         Main.ArrowDown();
         Main.Enter();
+
+        Main.ListDown("//*[@id=\":r2h:\"]", 1);
 // Размер платы
-        Main.Send("//*[@id=\":rb:\"]", "180000000");
-        Main.Send("//*[@id=\":r19:\"]", "180000000");
+        Main.Send("//*[@id=\":rc:\"]", "180000000");
+        Main.Send("//*[@id=\":r1a:\"]", "180000000");
 // Объем заготовки
-        Main.ListDown("//*[@id=\":rc:\"]", 2);
+        Main.ListDown("//*[@id=\":rd:\"]", 2);
         Main.TimeOut(1000);
 
-        Main.ListDown("//*[@id=\":r4f:\"]", 2);
+        Main.ListDown("//*[@id=\":r50:\"]", 2);
         Main.TimeOut(1000);
 
-        Main.Send("//*[@id=\":r4v:\"]", "29:3:10:66"); // Учетный номер квартала
+        Main.Send("//*[@id=\":r5g:\"]", "29:3:10:66"); // Учетный номер квартала
 
-        Main.ListDown("//*[@id=\":r4h:\"]", 2);
+        Main.ListDown("//*[@id=\":r52:\"]", 2);
 
-        Main.Send("//*[@id=\":r50:\"]", "29:3:10:66:38"); // Учетный номер выдела
+        Main.Send("//*[@id=\":r5h:\"]", "29:3:10:66:38"); // Учетный номер выдела
 
-        Main.Send("//*[@id=\":r4i:\"]", "500");
-        Main.ListDown("//*[@id=\":r4p:\"]", 1);
-        Main.ListDown("//*[@id=\":r4r:\"]", 1);
-        Main.ListDown("//*[@id=\":r4t:\"]", 1);
-        Main.Send("//*[@id=\":r4j:\"]", Main.RandomNum(4));
-        Main.Send("//*[@id=\":r4k:\"]", Main.RandomNum(4));
-        Main.Send("//*[@id=\":r4l:\"]", Main.RandomNum(4));
-        Main.Send("//*[@id=\":r4m:\"]", Main.RandomNum(4));
-        Main.Send("//*[@id=\":r4n:\"]", Main.RandomNum(4));
-        Main.Send("//*[@id=\":r4o:\"]", Main.RandomNum(4));
+        Main.Send("//*[@id=\":r53:\"]", "500");
+        Main.ListDown("//*[@id=\":r5a:\"]", 1);
+        Main.ListDown("//*[@id=\":r5c:\"]", 1);
+//Объем породы древесины лесных насаждений, подлежащих заготовке
+        Main.ListDown("//*[@id=\":r5e:\"]", 1);
+        Main.Send("//*[@id=\":r54:\"]", Main.RandomNum(4));
+        Main.Send("//*[@id=\":r55:\"]", Main.RandomNum(4));
+        Main.Send("//*[@id=\":r56:\"]", Main.RandomNum(4));
+        Main.Send("//*[@id=\":r57:\"]", Main.RandomNum(4));
+        Main.Send("//*[@id=\":r58:\"]", Main.RandomNum(4));
+        Main.Send("//*[@id=\":r59:\"]", Main.RandomNum(4));
 // Сведения об акте приема - передачи
-        Main.Send("//*[@id=\":r1i:\"]", Main.RandomNum(6));
-        Main.SendDate("//*[@id=\":r1j:\"]", date);
-        Main.SendDate("//*[@id=\":r1l:\"]", date);
+        Main.Send("//*[@id=\":r1j:\"]", Main.RandomNum(6));
+        Main.SendDate("//*[@id=\":r1k:\"]", date);
+        Main.SendDate("//*[@id=\":r1m:\"]", date);
 // Внесение
         Main.Click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div[1]/div/div/form/div/div/div[4]/div/button[2]");
         Main.TimeOut(5000);
@@ -269,7 +280,7 @@ public class MainDKP_DEV {
         Main.Click("/html/body/div[3]/div[3]/div/div[2]/button");
     }
 
-    @Test(successPercentage=100)
+    @Test(enabled = true)
     public void step_05_wait_intoGLR() {
         Main.TimeOut(3000);
         Main.Get(cartDoc);
@@ -284,7 +295,7 @@ public class MainDKP_DEV {
         Main.Click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div[3]/div/div/div/div[2]/div[2]/div/div/div/div/div[7]/a");
         Main.TimeOut(3000);
     }
-    @Test
+    @Test(enabled = true)
     public void step_06_intoGLR() {
 
         Main.Get(urlIntoGLR);
