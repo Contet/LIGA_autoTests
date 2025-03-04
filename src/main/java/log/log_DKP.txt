@@ -102,13 +102,3 @@ https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pil/task?target=formKeyPilA
 https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=43c09f52-f81a-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc
 https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=5f4bbfe8-f81b-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc
 РВ-250303-01:00100
-https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=835b8ff2-f8cb-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc
-https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=a1161e39-f8cd-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc
-https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=abaf5289-f8ce-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc
-https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=3ad3eade-f8cf-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc
-РВ-250304-02:00129
-РВ-250304-02:00131
-РВ-250304-02:00137
-РВ-250304-02:00243
-РВ-250304-02:00244
-РВ-250304-02:00248

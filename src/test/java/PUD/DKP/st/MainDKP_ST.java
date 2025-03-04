@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.theInternet.MainPage;
 
-import java.sql.Time;
 import java.time.Duration;
 
 import static browser.Config.WAIT;

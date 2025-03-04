@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+
+    <test name="BasicTests">
+        <classes>
+            <class name="PUD.DKP.dev.MainDKP_DEV" />
+        </classes>
+    </test>
+
+</suite>

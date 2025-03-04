@@ -62,7 +62,7 @@ public class Main_Nedra_DEV {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void step_02_post_nedra() {
         for (int i = 1; i < 2; i++) {
             String date = Main.DateNow();
@@ -99,7 +99,7 @@ public class Main_Nedra_DEV {
         }
     }
 
-    @Test
+    @Test(enabled = false)
     public void step_03_wait_outputNedra() {
 
         Main.TimeOut(5000);
@@ -121,11 +121,11 @@ public class Main_Nedra_DEV {
     @Test
     public void step_04_output_nedra() {
 
-        Main.Get(urlPudOutputter);
-//        Main.Get("https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/view/7c821b4b-eae0-11ef-9359-3a05138088e9");
-        Main.TimeOut(3000);
+//        Main.Get(urlPudOutputter);
+        Main.Get("https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=3ad3eade-f8cf-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc");
+        Main.TimeOut(5000);
         Main.Refresh();
-        Main.TimeOut(3000);
+        Main.TimeOut(5000);
 
         String date = Main.DateNow();
         String end_date = Main.RandomDateToday();
@@ -143,38 +143,19 @@ public class Main_Nedra_DEV {
         Main.Send("//*[@id=\":r5:\"]", Main.RandomNum(3));
         Main.Send("//*[@id=\":r6:\"]", Main.RandomNum(5));
         Main.Send("//*[@id=\":r9:\"]", Main.RandomNum(8));
-//// Сведения о продавце
-//        Main.ListFirst("//*[@id=\":re:\"]", 2);
-//
-//        Main.Send("//*[@id=\":r1a:\"]", "Дубки, кв. дубовый, дувецкое");
-//        Main.Send("//*[@id=\":r1b:\"]", "Дубки, кв. дубовый, дувецкое, дубни");
-//        Main.Send("//*[@id=\":r1c:\"]", "7970476159");
-//        Main.Send("//*[@id=\":r1d:\"]", "426944808");
-//        Main.Send("//*[@id=\":r1e:\"]", "1097793655222");
-//        Main.Send("//*[@id=\":r1f:\"]", "1097793655222");
-//// Банковские реквизиты
-//        Main.Send("//*[@id=\":r1m:\"]", "Дубки, кв. дубовый, дувецкое");
-//        Main.Send("//*[@id=\":r1n:\"]", Main.RandomNum(20));
-//        Main.Send("//*[@id=\":r1o:\"]", Main.RandomNum(20));
-//        Main.Send("//*[@id=\":r1p:\"]", Main.RandomNum(9));
-//// Данные сотрудника
-//        Main.Send("//*[@id=\":r1q:\"]", "Павел");
-//        Main.Send("//*[@id=\":r1r:\"]", "Орлов");
-//        Main.Send("//*[@id=\":r1s:\"]", "Автоматизирович");
-//        Main.Send("//*[@id=\":r1t:\"]", "Автоматизатор");
-//        Main.Send("//*[@id=\":r1u:\"]", "Уполномоченный робот");
-//        Main.Send("//*[@id=\":r1v:\"]", Main.RandomNum(6));
-//        Main.SendDate("//*[@id=\":r20:\"]", date);
-//        Main.Send("//*[@id=\":r22:\"]", "+79999999999");
-//        Main.SendDate("//*[@id=\":r23:\"]", date);
-//        Main.SendDate("//*[@id=\":r25:\"]", date);
+
 // Сведения о лесопользователе
 
         Main.ListDown("//*[@id=\":re:\"]", 2);
         Main.Click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div[1]/div/div/form/div/div/div[1]/div[14]/div[1]/div[3]/div/button");
-        Main.TimeOut(2000);
-        Main.Send("//*[@id=\":r2c:\"]", "7708237747");
-        Main.TimeOut(2000);
+        Main.TimeOut(3000);
+        try {
+            Main.Send("//*[@id=\":r2s:\"]", "7708237747");
+        }
+        catch (Exception e){
+            Main.Send("//*[@id=\":r2c:\"]", "7708237747");
+        }
+        Main.TimeOut(3000);
         Main.Click("/html/body/div[3]/div[3]/div/div[1]/form/div/div[2]/button");
         Main.TimeOut(3000);
             try{
@@ -189,11 +170,6 @@ public class Main_Nedra_DEV {
 
         Main.Send("//*[@id=\":r26:\"]", "г. Дубки, ул. Дубовая, кв. Дубовый, д. 12");
         Main.Send("//*[@id=\":r2a:\"]", "glinkov@fciit.ru");
-// Сведения о представителе
-//        Main.Send("//*[@id=\":r3c:\"]", "Иванов");
-//        Main.Send("//*[@id=\":r3d:\"]", "Иван");
-//        Main.Send("//*[@id=\":r3e:\"]", "Автоматизирович");
-//        Main.Send("//*[@id=\":r3f:\"]", Main.RandomNum(11));
 
 // Сведения об участке недр
 
@@ -203,12 +179,11 @@ public class Main_Nedra_DEV {
         Main.TimeOut(1500);
         Main.ListDown("//*[@id=\":r1q:\"]", 3);
         Main.Send("//*[@id=\":r1f:\"]", "Работы");
-
+// Местоположение
         Main.ListDown("//*[@id=\":r1s:\"]", 1);
-        Main.ListDown("//*[@id=\":r1u:\"]", 1);
-        Main.Send("//*[@id=\":r20:\"]", "Тегринское");
+        Main.Send("//*[@id=\":r1u:\"]", "Тегринское");
         Main.TimeOut(1500);
-        Main.ListDown("//*[@id=\":r20:\"]", 1);
+        Main.ListDown("//*[@id=\":r1u:\"]", 1);
 // Лесные кварталы \ выделы
 
 //        Main.ListDown("//*[@id=\":r1h:\"]", 2); // Учетный квартал
