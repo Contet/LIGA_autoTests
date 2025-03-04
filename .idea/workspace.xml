@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="0.8.3 beta release">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/dev_dkp_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MainDKP_DEV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/DKP/ДКПkna.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/DKP/ДКПkna.pdf.sig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/IIFCHHFNNMPDBIBIFMLJNFJHPIFIFFOG_1_2_13_0.crx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/firefox_cryptopro_extension_latest.xpi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/log/log_DKP.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/log/log_NEDRA.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/log/log_POL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log/log_DKP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_DKP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log/log_NEDRA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_NEDRA.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log/log_POL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_POL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java" afterDir="false" />
-    </list>
+    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.0 release" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -293,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740484624104</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1.0 release">
+      <option name="closed" value="true" />
+      <created>1741099224954</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741099224954</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,7 +299,8 @@
     <MESSAGE value="0.8 beta release" />
     <MESSAGE value="0.8.2 beta release" />
     <MESSAGE value="0.8.3 beta release" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.8.3 beta release" />
+    <MESSAGE value="1.0 release" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0 release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
