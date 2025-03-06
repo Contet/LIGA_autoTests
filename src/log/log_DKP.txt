@@ -112,3 +112,14 @@ https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudE
 РВ-250304-02:00243
 РВ-250304-02:00244
 РВ-250304-02:00248
+РВ-250305-03:00030
+https://fgislk-test.gov.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=7b2ef702-f9ca-11ef-95d2-6e819d5ee989&key=formKeyPudExtractInformation&process=pud_digitize_doc
+https://fgislk-test.gov.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=7b2ef702-f9ca-11ef-95d2-6e819d5ee989&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250305-03:00035
+https://fgislk-test.gov.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=91a41bfc-f9db-11ef-95d2-6e819d5ee989&key=formKeyPudExtractInformation&process=pud_digitize_doc
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=64290807-fa6b-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=d912ff31-fa6b-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250306-04:00021
+РВ-250306-04:00023
+РВ-250306-04:00025
+https://fgislk-test.gov.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=672e4e03-fa75-11ef-95d2-6e819d5ee989&key=formKeyPudExtractInformation&process=pud_digitize_doc

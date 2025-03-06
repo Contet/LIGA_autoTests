@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.0 release" />
+    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.0 release">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log/log_DKP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_DKP.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log/log_NEDRA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_NEDRA.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/browser/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/browser/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,57 +62,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main (1).executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Main_Dirt.executor": "Run",
-    "JAR Application.seleniumFirst-1.0-SNAPSHOT.jar.executor": "Run",
-    "Maven.Tests [clean,install].executor": "Run",
-    "Maven.Tests [test].executor": "Run",
-    "Maven.seleniumFirst [clean,install].executor": "Run",
-    "Maven.seleniumFirst [clean,package,-U].executor": "Run",
-    "Maven.seleniumFirst [clean,package].executor": "Run",
-    "Maven.seleniumFirst [clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.MainAZOL.executor": "Debug",
-    "TestNG.MainAZOL_DO_Find.executor": "Run",
-    "TestNG.MainAZOL_DO_Find.step_01.executor": "Debug",
-    "TestNG.MainDKP_DEV (1).executor": "Run",
-    "TestNG.MainDKP_DEV.executor": "Debug",
-    "TestNG.MainDKP_DEV.step_02_post_DKP.executor": "Debug",
-    "TestNG.MainDKP_DEV.step_04_output_DKP.executor": "Debug",
-    "TestNG.MainDKP_DEV.step_04_wait_outputDKP.executor": "Debug",
-    "TestNG.MainDKP_ST.executor": "Debug",
-    "TestNG.MainLS.executor": "Debug",
-    "TestNG.MainLS.step_01_Autorization_rmdl.executor": "Debug",
-    "TestNG.MainLS.step_02_Autorization_lkl.executor": "Debug",
-    "TestNG.MainLS_DEV.executor": "Debug",
-    "TestNG.MainPOL_DEV.executor": "Debug",
-    "TestNG.MainPOL_DEV.step_01_Autorization_rmdl.executor": "Run",
-    "TestNG.MainPOL_DEV.step_02_Autorization_lkl.executor": "Debug",
-    "TestNG.MainPOL_DEV.step_03_post_POL.executor": "Debug",
-    "TestNG.MainPOL_ST.executor": "Debug",
-    "TestNG.MainPOL_ST.step_02_Autorization_lkl.executor": "Debug",
-    "TestNG.MainSendPOL_DEV.executor": "Debug",
-    "TestNG.MainTest.executor": "Run",
-    "TestNG.MainTest.step_01.executor": "Run",
-    "TestNG.MainTest_Dirt (1).executor": "Run",
-    "TestNG.MainTest_Dirt.executor": "Debug",
-    "TestNG.MainTest_Dirt.step_01.executor": "Run",
-    "TestNG.Main_Nedra_DEV.executor": "Debug",
-    "TestNG.Main_Nedra_ST.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/naknyazev/IdeaProjects/My_Testing_2/target/generated-test-sources/test-annotations",
-    "last_opened_file_path": "C:/Users/naknyazev/IdeaProjects/My_Testing_2/src/main/java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.21264368",
-    "settings.editor.selected.configurable": "configurable.group.tools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main_Dirt.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.seleniumFirst-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Tests [-v].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Tests [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Tests [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Tests [where].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.seleniumFirst [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.seleniumFirst [clean,package,-U].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.seleniumFirst [clean,package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.seleniumFirst [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.MainAZOL.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainAZOL_DO_Find.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MainAZOL_DO_Find.step_01.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainDKP_DEV (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MainDKP_DEV.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainDKP_DEV.step_02_post_DKP.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainDKP_DEV.step_04_output_DKP.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainDKP_DEV.step_04_wait_outputDKP.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainDKP_ST.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainLS.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainLS.step_01_Autorization_rmdl.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainLS.step_02_Autorization_lkl.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainLS_DEV.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainPOL_DEV.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainPOL_DEV.step_01_Autorization_rmdl.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MainPOL_DEV.step_02_Autorization_lkl.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainPOL_DEV.step_03_post_POL.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainPOL_ST.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainPOL_ST.step_02_Autorization_lkl.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainSendPOL_DEV.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MainTest.step_01.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MainTest_Dirt (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MainTest_Dirt.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.MainTest_Dirt.step_01.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Main_Nedra_DEV.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.Main_Nedra_ST.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/naknyazev/IdeaProjects/My_Testing_2/target/generated-test-sources/test-annotations&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/naknyazev/IdeaProjects/My_Testing_2/src/main/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.21264368&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\naknyazev\IdeaProjects\My_Testing_2\src\main\java" />
@@ -132,11 +141,14 @@
       <command value="import org.testng.annotations.*;" />
       <command value="mvn clean package" />
       <command value="mvn clean package -U" />
-      <command value="mvn test" />
       <command value="mvn clean install" />
+      <command value="where mvn" />
+      <command value="mvn where" />
+      <command value="mvn test" />
+      <command value="mvn -v" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="TestNG.MainDKP_ST">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="seleniumFirst" />
@@ -184,6 +196,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainDKP_ST" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumFirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PUD.DKP.st.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PUD.DKP.st" />
+      <option name="MAIN_CLASS_NAME" value="PUD.DKP.st.MainDKP_ST" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main_Nedra_DEV" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
       <extension name="coverage">
@@ -203,9 +232,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MainDKP_ST" />
         <item itemvalue="TestNG.Main_Nedra_DEV" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="TestNG.MainDKP_DEV" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -278,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741099224954</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1.0 release">
+      <option name="closed" value="true" />
+      <created>1741099262262</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741099262262</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -394,6 +432,21 @@
           <url>file://$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java</url>
           <line>205</line>
           <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java</url>
+          <line>445</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java</url>
+          <line>278</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/Main_Script/Main_Dirt.java</url>

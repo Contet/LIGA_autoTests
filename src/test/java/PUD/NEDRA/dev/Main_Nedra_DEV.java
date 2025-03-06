@@ -62,7 +62,7 @@ public class Main_Nedra_DEV {
 
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void step_02_post_nedra() {
         for (int i = 1; i < 2; i++) {
             String date = Main.DateNow();
@@ -99,7 +99,7 @@ public class Main_Nedra_DEV {
         }
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void step_03_wait_outputNedra() {
 
         Main.TimeOut(5000);
@@ -121,8 +121,8 @@ public class Main_Nedra_DEV {
     @Test
     public void step_04_output_nedra() {
 
-//        Main.Get(urlPudOutputter);
-        Main.Get("https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=3ad3eade-f8cf-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc");
+        Main.Get(urlPudOutputter);
+//        Main.Get("https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=3ad3eade-f8cf-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc");
         Main.TimeOut(5000);
         Main.Refresh();
         Main.TimeOut(5000);
