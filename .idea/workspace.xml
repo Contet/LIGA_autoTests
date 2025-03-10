@@ -4,13 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.0 release">
+    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.1 release">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/BaseDataSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/PUD/DKP/DateDKP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/autorization/DataAutoriz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/autorization/DataUsers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PUD/DKP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/LinksAutorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/xAutorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/xAutorization_Dirt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/log/log_DKP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_DKP.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/log/log_NEDRA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_NEDRA.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainDKP_DEV.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/browser/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/browser/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LD/dev/MainLS_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LD/dev/MainLS_DEV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LD/st/MainLS_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LD/st/MainLS_ST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POL/st/MainPOL_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POL/st/MainPOL_ST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/st/Main_Nedra_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/st/Main_Nedra_ST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/browser/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/browser/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/theInternet/MainPage.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -62,59 +85,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main_Dirt.executor&quot;: &quot;Run&quot;,
-    &quot;JAR Application.seleniumFirst-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Tests [-v].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Tests [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Tests [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Tests [where].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.seleniumFirst [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.seleniumFirst [clean,package,-U].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.seleniumFirst [clean,package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.seleniumFirst [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.MainAZOL.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainAZOL_DO_Find.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MainAZOL_DO_Find.step_01.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainDKP_DEV (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MainDKP_DEV.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainDKP_DEV.step_02_post_DKP.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainDKP_DEV.step_04_output_DKP.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainDKP_DEV.step_04_wait_outputDKP.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainDKP_ST.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainLS.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainLS.step_01_Autorization_rmdl.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainLS.step_02_Autorization_lkl.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainLS_DEV.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainPOL_DEV.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainPOL_DEV.step_01_Autorization_rmdl.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MainPOL_DEV.step_02_Autorization_lkl.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainPOL_DEV.step_03_post_POL.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainPOL_ST.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainPOL_ST.step_02_Autorization_lkl.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainSendPOL_DEV.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MainTest.step_01.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MainTest_Dirt (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MainTest_Dirt.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.MainTest_Dirt.step_01.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Main_Nedra_DEV.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.Main_Nedra_ST.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/naknyazev/IdeaProjects/My_Testing_2/target/generated-test-sources/test-annotations&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/naknyazev/IdeaProjects/My_Testing_2/src/main/java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.21264368&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main (1).executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Main_Dirt.executor": "Run",
+    "Application.test.executor": "Run",
+    "JAR Application.seleniumFirst-1.0-SNAPSHOT.jar.executor": "Run",
+    "Maven.Tests [-v].executor": "Run",
+    "Maven.Tests [clean,install].executor": "Run",
+    "Maven.Tests [clean,package,-U].executor": "Run",
+    "Maven.Tests [test].executor": "Run",
+    "Maven.Tests [where].executor": "Run",
+    "Maven.seleniumFirst [clean,install].executor": "Run",
+    "Maven.seleniumFirst [clean,package,-U].executor": "Run",
+    "Maven.seleniumFirst [clean,package].executor": "Run",
+    "Maven.seleniumFirst [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.DKP_POM.full_DKP.executor": "Debug",
+    "TestNG.MainAZOL.executor": "Debug",
+    "TestNG.MainAZOL_DO_Find.executor": "Run",
+    "TestNG.MainAZOL_DO_Find.step_01.executor": "Debug",
+    "TestNG.MainDKP_DEV (1).executor": "Run",
+    "TestNG.MainDKP_DEV.executor": "Debug",
+    "TestNG.MainDKP_DEV.step_02_post_DKP.executor": "Debug",
+    "TestNG.MainDKP_DEV.step_04_output_DKP.executor": "Debug",
+    "TestNG.MainDKP_DEV.step_04_wait_outputDKP.executor": "Debug",
+    "TestNG.MainDKP_ST.executor": "Debug",
+    "TestNG.MainLS.executor": "Debug",
+    "TestNG.MainLS.step_01_Autorization_rmdl.executor": "Debug",
+    "TestNG.MainLS.step_02_Autorization_lkl.executor": "Debug",
+    "TestNG.MainLS_DEV.executor": "Debug",
+    "TestNG.MainPOL_DEV.executor": "Debug",
+    "TestNG.MainPOL_DEV.step_01_Autorization_rmdl.executor": "Run",
+    "TestNG.MainPOL_DEV.step_02_Autorization_lkl.executor": "Run",
+    "TestNG.MainPOL_DEV.step_03_post_POL.executor": "Debug",
+    "TestNG.MainPOL_ST.executor": "Debug",
+    "TestNG.MainPOL_ST.step_02_Autorization_lkl.executor": "Debug",
+    "TestNG.MainSendPOL_DEV.executor": "Debug",
+    "TestNG.MainTest.executor": "Run",
+    "TestNG.MainTest.step_01.executor": "Run",
+    "TestNG.MainTest_Dirt (1).executor": "Run",
+    "TestNG.MainTest_Dirt.executor": "Debug",
+    "TestNG.MainTest_Dirt.step_01.executor": "Run",
+    "TestNG.Main_Nedra_DEV.executor": "Debug",
+    "TestNG.Main_Nedra_ST.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/naknyazev/IdeaProjects/My_Testing_2/target/generated-test-sources/test-annotations",
+    "last_opened_file_path": "C:/Users/naknyazev/IdeaProjects/My_Testing_2/src/main/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.21264368",
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\naknyazev\IdeaProjects\My_Testing_2\src\main\java" />
@@ -140,24 +166,23 @@
       <command value="mvn clean" />
       <command value="import org.testng.annotations.*;" />
       <command value="mvn clean package" />
-      <command value="mvn clean package -U" />
-      <command value="mvn clean install" />
       <command value="where mvn" />
       <command value="mvn where" />
       <command value="mvn test" />
       <command value="mvn -v" />
+      <command value="mvn clean package -U" />
+      <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MainDKP_ST">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="TestNG.MainPOL_DEV">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
       <module name="seleniumFirst" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.Main" />
+    <configuration name="DKP_POM.full_DKP" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
       <extension name="coverage">
         <pattern>
@@ -165,13 +190,25 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="PUD.DKP.dev" />
+      <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.DKP_POM" />
+      <option name="METHOD_NAME" value="full_DKP" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MainDKP_DEV" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
-      <option name="PACKAGE_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PUD.DKP.dev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PUD.DKP.dev" />
       <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.MainDKP_DEV" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
@@ -196,16 +233,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainDKP_ST" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPOL_DEV" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PUD.DKP.st.*" />
+          <option name="PATTERN" value="POL.dev.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="PUD.DKP.st" />
-      <option name="MAIN_CLASS_NAME" value="PUD.DKP.st.MainDKP_ST" />
+      <option name="PACKAGE_NAME" value="POL.dev" />
+      <option name="MAIN_CLASS_NAME" value="POL.dev.MainPOL_DEV" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -213,17 +250,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main_Nedra_DEV" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPOL_DEV.step_02_Autorization_lkl" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PUD.NEDRA.dev.*" />
+          <option name="PATTERN" value="POL.dev.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="PUD.NEDRA.dev" />
-      <option name="MAIN_CLASS_NAME" value="PUD.NEDRA.dev.Main_Nedra_DEV" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="POL.dev" />
+      <option name="MAIN_CLASS_NAME" value="POL.dev.MainPOL_DEV" />
+      <option name="METHOD_NAME" value="step_02_Autorization_lkl" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -232,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MainDKP_ST" />
-        <item itemvalue="TestNG.Main_Nedra_DEV" />
+        <item itemvalue="TestNG.MainPOL_DEV" />
         <item itemvalue="TestNG.MainDKP_DEV" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG.MainPOL_DEV.step_02_Autorization_lkl" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="TestNG.DKP_POM.full_DKP" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741099262262</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1.1 release">
+      <option name="closed" value="true" />
+      <created>1741263618698</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741263618698</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,7 +384,8 @@
     <MESSAGE value="0.8.2 beta release" />
     <MESSAGE value="0.8.3 beta release" />
     <MESSAGE value="1.0 release" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0 release" />
+    <MESSAGE value="1.1 release" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1 release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -375,12 +422,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/NEDRA/st/Main_Nedra_ST.java</url>
-          <line>214</line>
+          <line>215</line>
           <option name="timeStamp" value="178" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/NEDRA/st/Main_Nedra_ST.java</url>
-          <line>216</line>
+          <line>217</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -430,12 +477,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java</url>
-          <line>205</line>
+          <line>194</line>
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java</url>
-          <line>445</line>
+          <line>285</line>
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -448,6 +495,81 @@
           <line>33</line>
           <option name="timeStamp" value="238" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="280" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/test.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="281" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
+          <line>276</line>
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
+          <line>267</line>
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/Main_Script/Main_Dirt.java</url>
           <line>11</line>
@@ -456,7 +578,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java</url>
-          <line>213</line>
+          <line>202</line>
           <properties class="PUD.NEDRA.dev.Main_Nedra_DEV" method="step_05_wait_intoGLR">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

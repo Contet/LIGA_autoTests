@@ -1,4 +1,4 @@
-package pages.theInternet;
+package pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -15,18 +15,16 @@ import java.util.Random;
 
 
 
-public class MainPage {
+public class BasePage {
     protected WebDriver driver;
-    protected Actions actions;
 
 
-
-    public MainPage(WebDriver driver) {
+    public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 
 
-    public void TimeOut(int wait){
+    public void timeOut(int wait){
         try {
             // Пауза на 1000 миллисекунд (1 секунда)
             Thread.sleep(wait);
@@ -36,107 +34,95 @@ public class MainPage {
     }
 
 
-    public boolean IsDisp(String key){
+    public boolean isDisp(String key){
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Ожидание 10 секунд
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(key)));
+            System.out.println("Элемент " + key + " отобразился на интерфейсе");
             return element.isDisplayed();
         } catch (TimeoutException e) {
+            System.out.println("Элемент " + key + " НЕ отобразился на интерфейсе");
             return false;
         }
     }
 
 
-    public void Click(String key){
+    public void click(String key) {
+        try {
+            // Создаем WebDriverWait для ожидания до 15 секунд
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
-//        TimeOut(1000);
+            // Ожидаем, пока элемент станет кликабельным
+            WebElement clickableButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(key)));
+            System.out.println("Элемент стал кликабельным: " + key);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+            // Прокручиваем элемент в область видимости (если это необходимо)
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clickableButton);
+            System.out.println("Элемент прокручен в область видимости: " + key);
 
-        WebElement button = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(key)));
+            // Кликаем по элементу
+            clickableButton.click();
+            System.out.println("Клик выполнен по элементу: " + key);
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(key)));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(key)));
-
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", button);
-
-        button.click();
-
-    }
-
-
-    public void ClickCSS(String key){
-        TimeOut(100);
-        while(!IsDisp(key)){
-            TimeOut(100);
+        } catch (TimeoutException e) {
+            // Обработка случая, если элемент не стал кликабельным за отведенное время
+            System.err.println("Элемент не стал кликабельным за отведенное время: " + key);
+            throw e; // Перебрасываем исключение дальше, если нужно
+        } catch (Exception e) {
+            // Обработка других возможных ошибок
+            System.err.println("Произошла ошибка при выполнении клика: " + e.getMessage());
+            throw e;
         }
-        driver.findElement(By.cssSelector(String.valueOf(key))).click();
     }
 
 
-    public void Send(String key, String value) {
-        if(IsDisp(key)){
+    public void send(String key, String value) {
+        if(isDisp(key)){
             driver.findElement(By.xpath(String.valueOf(key))).sendKeys(value);
         }
     }
 
 
-    public void SendDate(String key, String value) {
-        Click(key);
-        TimeOut(100);
-        if(IsDisp(key)){
+    public void sendDate(String key, String value) {
+        click(key);
+        timeOut(100);
+        if(isDisp(key)){
             driver.findElement(By.xpath(String.valueOf(key))).sendKeys(value);
         }
-        else{TimeOut(1000);}
+        else{
+            timeOut(1000);}
     }
 
 
-    public void OpenUrl(String key){
-        driver.get(key);
-    }
-
-
-    public void Enter(){
+    public void enter(){
         Actions actions = new Actions(driver);
         actions.sendKeys(Keys.ENTER).perform();
     }
 
 
-    public void Scroll_down(String key){
-
-        WebElement body = driver.findElement(By.xpath(key));
+    public void arrowDown(){
         Actions actions = new Actions(driver);
-        actions.moveToElement(body).sendKeys(org.openqa.selenium.Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.ARROW_DOWN).perform();
     }
 
 
-    public void ArrowDown(){
+    public void arrowUp(){
         Actions actions = new Actions(driver);
-
-        // Эмулируем нажатие клавиши "Стрелка вниз"
-        actions.sendKeys(Keys.ARROW_DOWN).perform();
-        }
-
-
-    public void ArrowUp(){
-        Actions actions = new Actions(driver);
-
-        // Эмулируем нажатие клавиши "Стрелка вниз"
         actions.sendKeys(Keys.ARROW_UP).perform();
     }
 
-    public void Refresh(){
+    public void refresh(){
         driver.navigate().refresh();
     }
 
 
-    public String GetText(String key) {
+    public String getText(String key) {
         WebElement element = driver.findElement(By.xpath(key));
         return element.getText();
     }
 
 
-    public void WriteTextToFile(String text, String fileName) {
+    public void writeTextToFile(String text, String fileName) {
         String filePath = "src/log/" + fileName;
         try (FileWriter fileWriter = new FileWriter(filePath, true)) { // true для добавления в конец файла
             fileWriter.write(text + "\n"); // Добавляем новую строку
@@ -147,12 +133,12 @@ public class MainPage {
     }
 
 
-    public void Get(String key){
+    public void get(String key){
         driver.get(key);
     }
 
 
-    public String DateNow(){
+    public String dateNow(){
         LocalDateTime currentDateTime = LocalDateTime.now();
 
         // Создаем форматировщик для преобразования даты в строку
@@ -167,14 +153,14 @@ public class MainPage {
     }
 
 
-    public String GetUrl(String key){
+    public String getUrl(String key){
         WebElement button = driver.findElement(By.xpath(key)); // Замените на ваш локатор
         String url = button.getAttribute("href");
         return url;
     }
 
 
-    public String RandomDateToday(){
+    public String randomDateToday(){
         // Текущая дата
         LocalDate today = LocalDate.now();
         // Максимальное количество дней для добавления (например, 365 дней)
@@ -190,25 +176,25 @@ public class MainPage {
     }
 
 
-    public void ListDown(String key, Integer k){
-        Click(key);
+    public void listDown(String key, Integer k){
+        click(key);
         for(int i = 0; i < k; i++){
-            ArrowDown();
+            arrowDown();
         }
-        Enter();
+        enter();
     }
 
 
-    public void ListUp(String key, Integer k){
-        Click(key);
+    public void listUp(String key, Integer k){
+        click(key);
         for(int i = 0; i < k; i++){
-            ArrowUp();
+            arrowUp();
         }
-        Enter();
+        enter();
     }
 
 
-    public String RandomNum(Integer n){
+    public String randomNum(Integer n){
         if (n <= 0) {
         throw new IllegalArgumentException("Количество цифр должно быть положительным числом.");
     }
@@ -231,22 +217,29 @@ public class MainPage {
     public void CheckBoxTrue(String key){
         WebElement checkbox = driver.findElement(By.xpath(key));
 
-// Используем JavaScript для установки состояния checked
         ((JavascriptExecutor) driver).executeScript("arguments[0].checked = true;", checkbox);
     }
 
 
-    public void WaitTask(String key){
+    public void waitTask(String key){
         if(key == null){
             key = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div[3]/div/div/div/div[2]/div[2]/div/div/div/div/div[7]/a"; // Значение по умолчанию
         }
 
-        while(!IsDisp(key)){
-            Refresh();
+        while(!isDisp(key)){
+            refresh();
         }
-        Click(key);
+
+        Boolean b = isDisp(key);
+        System.out.println("Отобразилась задача в карточке: " + b);
+
+        click(key);
     }
 
 
+    public void unInvisibalyInput(String key){
+        WebElement input_element = driver.findElement(By.xpath(key));
 
+        ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('hidden');", input_element);
+    }
 }
