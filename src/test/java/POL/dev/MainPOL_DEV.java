@@ -34,21 +34,6 @@ public class MainPOL_DEV {
         }
     }
 
-//   @Test
-//    public void step_01_Autorization_rmdl() {
-//        driver.get(xLKL_START_PAGE);
-//
-//        Main.Click(xLOGIN_BUTTON);
-//        Main.Send(xLOGIN_FIELD, "+79524945159");
-//        Main.Send(xPASSWORD_FIELD, "Dy2-6bn3WU");
-//        Main.Click(xSUBMIT_BUTTON);
-//
-//        Main.Click(xCONFIRM_BUTTON);
-//        Main.TimeOut(2000);
-//        Main.Click(xACCEPT_BUTTON);
-//
-//        Main.TimeOut(1000);
-//    }
 
     @Test
     public void step_02_Autorization_lkl() {

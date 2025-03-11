@@ -4,35 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.1 release">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/BaseDataSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/PUD/DKP/DateDKP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/autorization/DataAutoriz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/autorization/DataUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PUD/DKP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/LinksAutorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/xAutorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/xAutorization_Dirt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java" afterDir="false" />
+    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.2 release">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/placement/LinksPlacement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/placement/PlacementPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/placement/xPlacement_Dirt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log/log_DKP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_DKP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log/log_NEDRA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_NEDRA.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainDKP_DEV.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/browser/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/browser/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/theInternet/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LD/dev/MainLS_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LD/dev/MainLS_DEV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LD/st/MainLS_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LD/st/MainLS_ST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log/log_POL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_POL.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataSet/PUD/DKP/DateDKP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataSet/RMDL/PUD/DKP/DataDKP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataSet/autorization/DataAutoriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataSet/autorization/DataAutoriz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PUD/DKP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/PUD/DKP/DKP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/AutorizationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POL/st/MainPOL_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POL/st/MainPOL_ST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/st/MainDKP_ST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/st/Main_Nedra_ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/NEDRA/st/Main_Nedra_ST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/browser/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/browser/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/theInternet/MainPage.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +28,7 @@
       <list>
         <option value="package-info" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -174,7 +159,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MainPOL_DEV">
+  <component name="RunManager" selected="TestNG.DKP_POM.full_DKP">
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test" />
       <module name="seleniumFirst" />
@@ -270,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DKP_POM.full_DKP" />
         <item itemvalue="TestNG.MainPOL_DEV" />
         <item itemvalue="TestNG.MainDKP_DEV" />
         <item itemvalue="TestNG.MainPOL_DEV.step_02_Autorization_lkl" />
         <item itemvalue="Application.test" />
-        <item itemvalue="TestNG.DKP_POM.full_DKP" />
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741263618698</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1.2 release">
+      <option name="closed" value="true" />
+      <created>1741619749632</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741619749632</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,7 +378,8 @@
     <MESSAGE value="0.8.3 beta release" />
     <MESSAGE value="1.0 release" />
     <MESSAGE value="1.1 release" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1 release" />
+    <MESSAGE value="1.2 release" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.2 release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -456,26 +450,6 @@
           <option name="timeStamp" value="226" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="227" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="230" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="231" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="232" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/NEDRA/dev/Main_Nedra_DEV.java</url>
           <line>194</line>
           <option name="timeStamp" value="235" />
@@ -497,63 +471,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java</url>
-          <line>27</line>
+          <line>29</line>
           <option name="timeStamp" value="239" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="270" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="271" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="272" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="273" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="274" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="275" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="276" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="277" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="278" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="279" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="280" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/test.java</url>
@@ -562,12 +481,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
-          <line>276</line>
+          <line>290</line>
           <option name="timeStamp" value="283" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
-          <line>267</line>
+          <line>281</line>
           <option name="timeStamp" value="284" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">

@@ -4,11 +4,12 @@ import dataSet.autorization.DataAutoriz;
 import dataSet.autorization.DataUsers;
 import org.openqa.selenium.WebDriver;
 import pages.BasePage;
+
 import static pages.autorization.LinksAutorization.*;
 import static pages.autorization.xAutorization_Dirt.*;
 
-public class Autorization extends BasePage {
-    public Autorization(WebDriver driver) {
+public class AutorizationPage extends BasePage {
+    public AutorizationPage(WebDriver driver) {
         super(driver);
         this.Base = new BasePage(driver);
     }
@@ -16,14 +17,19 @@ public class Autorization extends BasePage {
 
     public void login(String cabinet, String user){
 
-        DataAutoriz userData = DataUsers.valueOf(user.toUpperCase()).getAuthData(); // Поиск по enum
+        DataAutoriz userData = DataUsers.valueOf(user.toUpperCase()).getAuthData(); // Поиск по enum users
 
         switch (cabinet){
             case "LKL":
                 loginLKL(userData);
+                break;
 
-            case("RMDL"):
+            case "RMDL":
                 loginRMDL(userData);
+                break;
+
+            default:
+                throw new IllegalArgumentException("Некорректный тип кабинета: " + cabinet);
         }
     }
 
@@ -32,6 +38,7 @@ public class Autorization extends BasePage {
         click(xBUTTON_LOGIN);
         send(xFIELD_ESIA_LOGIN, user.getLogin());
         send(xFIELD_ESIA_PASSWORD, user.getPassword());
+        timeOut(1000);
         click(xBUTTON_ESIA_LOGIN);
         timeOut(1000);
         click(xBUTTON_TYPE_USER_LKL);

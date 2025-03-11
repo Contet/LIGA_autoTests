@@ -4,19 +4,34 @@ import browser.Browser;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import pages.BasePage;
-import pages.PUD.DKP;
+import pages.RMDL.PUD.DKP.DKP;
 
 import java.time.Duration;
 
 import static browser.Config.EXPLICIT_WAIT;
+import static pages.RMDL.placement.LinksPlacement.LINK_PLACEMENT_MAIN;
 
 public class MainDKP_DEV {
 
+    public static final String xFIELD_FIND_DOCUMENT = "//*[@id=\":r3:\"]";
+    public static final String xBUTTON_FIND_DOCUMENT = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div/div[2]/div/div[3]/button[2]";
+    public static final String xFIELD_NAME_DOCUMENT = "//*[@id=\":r5:\"]";
+    public static final String xFIELD_AUTOR_DOCUMENT = "//*[@id=\":r6:\"]";
+    public static final String xFIELD_NUMBER_DOCUMENT = "//*[@id=\":r7:\"]";
+    public static final String xDATE_FIELD_DOCUMENT = "//*[@id=\":r8:\"]";
+    public static final String xHIDDEN_FIELD_INPUT_FILE = "//*[@id=\"file\"]";
+    public static final String xHIDDEN_FIELD_INPUT_FILESIG = "//*[@id=\"fileSig\"]";
+    public static final String SYSTEM_PATH_TO_INPUT_FILE = "C:\\Users\\naknyazev\\Documents\\DataAutoTest\\DKP\\ДКПkna.pdf";
+    public static final String SYSTEM_PATH_TO_INPUT_FILESIG = "C:\\Users\\naknyazev\\Documents\\DataAutoTest\\DKP\\ДКПkna.pdf.sig";
+    public static final String xTEXT_BIZ_KEY = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[1]/div/p[2]";
+    public static final String xBUTTON_ADD_DOCUMENT = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[3]/div/button";
+    public static final String xBUTTON_ADD_DOCUMENT_SIG = "/html/body/div[3]/div[3]/div/div/div[2]/button[2]";
+    public static final String xBUTTON_CLICK_TO_CARTDOC = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[1]/div/a";
     private WebDriver driver;
     private BasePage Base;
     private DKP DKP;
     private String urlPudOutputter;
-    private String cartDoc;
+    private String cartDocLink;
     private String urlIntoGLR;
 
     @BeforeTest
@@ -54,33 +69,32 @@ public class MainDKP_DEV {
     public void step_02_post_DKP() {
         for (int i = 1; i < 2; i++) {
             String date = Base.dateNow();
-            Base.get("https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/documents");
-            Base.send("//*[@id=\":r3:\"]", "купли");
+            Base.get(LINK_PLACEMENT_MAIN.getUrl());
+            Base.send(xFIELD_FIND_DOCUMENT, "купли");
             Base.timeOut(3000);
-            Base.listDown("//*[@id=\":r3:\"]", 1);
-            Base.click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div/div[2]/div/div[3]/button[2]");
+            Base.listDown(xFIELD_FIND_DOCUMENT, 1);
+            Base.click(xBUTTON_FIND_DOCUMENT);
 
-            Base.send("//*[@id=\":r5:\"]", "DKP_AUTO_" + date);
-            Base.send("//*[@id=\":r6:\"]", "ОРГАНИЗАЦИЯ -1635872784");
-            Base.send("//*[@id=\":r7:\"]", "DKP_auto_doc_no_" + date);
-            Base.click("//*[@id=\":r8:\"]");
-            Base.send("//*[@id=\":r8:\"]", date);
+            Base.send(xFIELD_NAME_DOCUMENT, "DKP_AUTO_" + date);
+            Base.send(xFIELD_AUTOR_DOCUMENT, "ОРГАНИЗАЦИЯ -1635872784");
+            Base.send(xFIELD_NUMBER_DOCUMENT, "DKP_auto_doc_no_" + date);
+            Base.sendDate(xDATE_FIELD_DOCUMENT, date);
 
-            Base.unInvisibalyInput("//*[@id=\"file\"]");
-            Base.unInvisibalyInput("//*[@id=\"fileSig\"]");
+            Base.unInvisibalyInput(xHIDDEN_FIELD_INPUT_FILE);
+            Base.unInvisibalyInput(xHIDDEN_FIELD_INPUT_FILESIG);
 
-            Base.send("//*[@id=\"file\"]", "C:\\Users\\naknyazev\\Documents\\DataAutoTest\\DKP\\ДКПkna.pdf");
-            Base.send("//*[@id=\"fileSig\"]", "C:\\Users\\naknyazev\\Documents\\DataAutoTest\\DKP\\ДКПkna.pdf.sig");
+            Base.send(xHIDDEN_FIELD_INPUT_FILE, SYSTEM_PATH_TO_INPUT_FILE);
+            Base.send(xHIDDEN_FIELD_INPUT_FILESIG, SYSTEM_PATH_TO_INPUT_FILESIG);
             Base.timeOut(1000);
 
-            String bizKey = Base.getText("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[1]/div/p[2]");
+            String bizKey = Base.getText(xTEXT_BIZ_KEY);
             Base.writeTextToFile(bizKey, "log_DKP.txt");
 
-            Base.click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[3]/div/button");
-            Base.click("/html/body/div[3]/div[3]/div/div/div[2]/button[2]");
+            Base.click(xBUTTON_ADD_DOCUMENT);
+            Base.click(xBUTTON_ADD_DOCUMENT_SIG);
             Base.timeOut(1000);
-            cartDoc = Base.getUrl("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[1]/div/a");
-            Base.click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[1]/div/a");
+            cartDocLink = Base.getUrl(xBUTTON_CLICK_TO_CARTDOC);
+            Base.click(xBUTTON_CLICK_TO_CARTDOC);
             Base.timeOut(2000);
         }
     }
@@ -275,7 +289,7 @@ public class MainDKP_DEV {
     @Test(enabled = true)
     public void step_05_wait_intoGLR() {
         Base.timeOut(3000);
-        Base.get(cartDoc);
+        Base.get(cartDocLink);
 
         while(!Base.isDisp("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div[3]/div/div/div/div[2]/div[2]/div/div/div/div/div[7]/a")){
             Base.refresh();

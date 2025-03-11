@@ -16,8 +16,6 @@ public class DataAutoriz {
     public String getLogin() {
         return login;
     }
-
-
     public String getPassword() {
         return password;
     }

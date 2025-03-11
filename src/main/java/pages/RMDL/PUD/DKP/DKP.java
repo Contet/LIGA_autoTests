@@ -1,4 +1,4 @@
-package pages.PUD;
+package pages.RMDL.PUD.DKP;
 
 import org.openqa.selenium.WebDriver;
 import pages.BasePage;
