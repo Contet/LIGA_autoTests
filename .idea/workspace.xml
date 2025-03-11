@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.2 release">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/placement/LinksPlacement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/placement/PlacementPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/placement/xPlacement_Dirt.java" afterDir="false" />
+    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.2.1 release">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/RMDL/PUD/DKP/Document.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/log/log_POL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_POL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataSet/PUD/DKP/DateDKP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataSet/RMDL/PUD/DKP/DataDKP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataSet/autorization/DataAutoriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataSet/autorization/DataAutoriz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PUD/DKP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/PUD/DKP/DKP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/autorization/Autorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/AutorizationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POL/dev/MainPOL_DEV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataSet/RMDL/PUD/DKP/DataDKP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataSet/RMDL/PUD/DKP/DataDKP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RMDL/placement/PlacementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/placement/PlacementPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" afterDir="false" />
     </list>
@@ -27,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -88,6 +83,7 @@
     "Maven.seleniumFirst [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.DKP_POM.executor": "Debug",
     "TestNG.DKP_POM.full_DKP.executor": "Debug",
     "TestNG.MainAZOL.executor": "Debug",
     "TestNG.MainAZOL_DO_Find.executor": "Run",
@@ -159,10 +155,20 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DKP_POM.full_DKP">
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
+  <component name="RunManager" selected="TestNG.MainPOL_DEV">
+    <configuration name="DKP_POM" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PUD.DKP.dev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PUD.DKP.dev" />
+      <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.DKP_POM" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -255,11 +261,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DKP_POM.full_DKP" />
         <item itemvalue="TestNG.MainPOL_DEV" />
+        <item itemvalue="TestNG.DKP_POM" />
+        <item itemvalue="TestNG.DKP_POM.full_DKP" />
         <item itemvalue="TestNG.MainDKP_DEV" />
         <item itemvalue="TestNG.MainPOL_DEV.step_02_Autorization_lkl" />
-        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -355,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741619749632</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1.2.1 release">
+      <option name="closed" value="true" />
+      <created>1741688578953</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741688578953</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,7 +393,8 @@
     <MESSAGE value="1.0 release" />
     <MESSAGE value="1.1 release" />
     <MESSAGE value="1.2 release" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.2 release" />
+    <MESSAGE value="1.2.1 release" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.2.1 release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -481,12 +496,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
-          <line>290</line>
+          <line>289</line>
           <option name="timeStamp" value="283" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
-          <line>281</line>
+          <line>280</line>
           <option name="timeStamp" value="284" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">

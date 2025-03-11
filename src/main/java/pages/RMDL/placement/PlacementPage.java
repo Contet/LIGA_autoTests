@@ -1,5 +1,7 @@
 package pages.RMDL.placement;
 
+import dataSet.RMDL.PUD.DKP.DataDKP;
+import dataSet.RMDL.PUD.DKP.Document;
 import org.openqa.selenium.WebDriver;
 import pages.BasePage;
 
@@ -9,13 +11,14 @@ import static pages.RMDL.placement.xPlacement_Dirt.*;
 public class PlacementPage extends BasePage {
     public PlacementPage(WebDriver driver) {
         super(driver);
-        this.Base = new BasePage(driver);
     }
-    private BasePage Base;
-    public String cartDocLink;
 
-    public void DKP(){
-        String date = Base.dateNow();
+    public String cartDocLink;
+    public String bizKey;
+
+    public void DKP(String data){
+        DataDKP doc = Document.valueOf(data.toUpperCase()).getDKPdata();
+        String date = dateNow();
 
 //      Выбор типа документа
         get(LINK_PLACEMENT_MAIN.getUrl());
@@ -23,20 +26,33 @@ public class PlacementPage extends BasePage {
         timeOut(3000);
         listDown(xFIELD_FIND_DOCUMENT, 1);
         click(xBUTTON_FIND_DOCUMENT);
+
 //      Блок информация о документе
-        send(xFIELD_NAME_DOCUMENT, "DKP_AUTO_" + date);
-        send(xFIELD_AUTOR_DOCUMENT, "ОРГАНИЗАЦИЯ -1635872784");
-        send(xFIELD_NUMBER_DOCUMENT, "DKP_auto_doc_no_" + date);
-        sendDate(xDATE_FIELD_DOCUMENT, date);
+        send(xFIELD_NAME_DOCUMENT, doc.getName());
+        send(xFIELD_AUTOR_DOCUMENT, doc.getAutor());
+
+        // Сделано для отладки по документу AUTO
+        if(doc.getName() == "DKP_AUTO_"){
+            send(xFIELD_NUMBER_DOCUMENT, doc.getNumber() + date);
+            sendDate(xDATE_FIELD_DOCUMENT, doc.getDate() + date);
+        }
+        else {
+            send(xFIELD_NUMBER_DOCUMENT, doc.getNumber());
+            sendDate(xDATE_FIELD_DOCUMENT, doc.getDate());
+        }
+        //
+
 //      Инпуты документа
         unInvisibalyInput(xHIDDEN_FIELD_INPUT_FILE);
         unInvisibalyInput(xHIDDEN_FIELD_INPUT_FILESIG);
         send(xHIDDEN_FIELD_INPUT_FILE, SYSTEM_PATH_TO_INPUT_FILE);
         send(xHIDDEN_FIELD_INPUT_FILESIG, SYSTEM_PATH_TO_INPUT_FILESIG);
         timeOut(1000);
+
 //      Запись БК
-        String bizKey = getText(xTEXT_BIZ_KEY);
-        writeTextToFile(bizKey, "log_DKP.txt");
+        bizKey = getText(xTEXT_BIZ_KEY);
+        writeTextToFile(bizKey, "log_DKP.txt"); // Для удобства лог
+
 //      Добавление документа ПДФ
         click(xBUTTON_ADD_DOCUMENT);
         click(xBUTTON_ADD_DOCUMENT_SIG);

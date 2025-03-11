@@ -27,9 +27,9 @@ public class MainDKP_DEV {
     public static final String xBUTTON_ADD_DOCUMENT = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[3]/div/button";
     public static final String xBUTTON_ADD_DOCUMENT_SIG = "/html/body/div[3]/div[3]/div/div/div[2]/button[2]";
     public static final String xBUTTON_CLICK_TO_CARTDOC = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[1]/div/a";
+
     private WebDriver driver;
     private BasePage Base;
-    private DKP DKP;
     private String urlPudOutputter;
     private String cartDocLink;
     private String urlIntoGLR;
@@ -39,7 +39,6 @@ public class MainDKP_DEV {
         driver = Browser.createDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(EXPLICIT_WAIT));
         Base = new BasePage(driver);
-        DKP = new DKP(driver);
 
     }
 

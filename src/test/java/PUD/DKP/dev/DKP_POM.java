@@ -33,7 +33,7 @@ public class DKP_POM {
     @Test
     public void full_DKP(){
         Auth.login("RMDL", "Zazubenko");
-        Placement.DKP();
+        Placement.DKP("Auto");
 
     }
 }
