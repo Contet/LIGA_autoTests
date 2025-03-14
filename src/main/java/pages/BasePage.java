@@ -11,6 +11,7 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.Random;
 
 
@@ -62,6 +63,7 @@ public class BasePage {
 
             // Кликаем по элементу
             clickableButton.click();
+            timeOut(500);
             System.out.println("Клик выполнен по элементу: " + key);
 
         } catch (TimeoutException e) {
@@ -72,6 +74,30 @@ public class BasePage {
             // Обработка других возможных ошибок
             System.err.println("Произошла ошибка при выполнении клика: " + e.getMessage());
             throw e;
+        }
+    }
+
+
+    public void clickClass(String key, String type) {
+
+//        List<WebElement> elements = driver.findElements(By.xpath(key + type + "')]"));
+
+        List<WebElement> elements = driver.findElements(By.xpath(key));
+
+        System.out.println("Найдено элементов: " + elements.size());
+        System.out.println("Поиск класса : " + key);
+        System.out.println("Тип = " + type);
+        for (WebElement element : elements) {
+            String text = element.getText();
+            System.out.println("Текущий элемент содержит текст: '" + text + "'");
+            if (element.getText().contains(type)) {
+                System.out.println("Зашли в if elem.getText().contains и тип = " + type);
+                element.click();
+                return; // Прерываем цикл после клика
+            }
+            else{
+                System.out.println("Бежим по дочерним класса, не увидели " + type);
+            }
         }
     }
 
@@ -233,7 +259,6 @@ public class BasePage {
         Boolean b = isDisp(key);
         System.out.println("Отобразилась задача в карточке: " + b);
 
-        click(key);
     }
 
 

@@ -27,6 +27,8 @@ public class MainDKP_DEV {
     public static final String xBUTTON_ADD_DOCUMENT = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[3]/div/button";
     public static final String xBUTTON_ADD_DOCUMENT_SIG = "/html/body/div[3]/div[3]/div/div/div[2]/button[2]";
     public static final String xBUTTON_CLICK_TO_CARTDOC = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div/div[1]/div/a";
+    public static final String xBUTTON_GO_TO_TASK = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div[3]/div/div/div/div[2]/div[2]/div/div/div/div/div[7]/a";
+    public static final String BUTTON_1 = "//*[@id=\":r2:\"]";
 
     private WebDriver driver;
     private BasePage Base;
@@ -107,10 +109,10 @@ public class MainDKP_DEV {
 
         Base.waitTask(null);
 
-        urlPudOutputter = Base.getUrl("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div[3]/div/div/div/div[2]/div[2]/div/div/div/div/div[7]/a");
+        urlPudOutputter = Base.getUrl(xBUTTON_GO_TO_TASK);
         Base.writeTextToFile(urlPudOutputter, "log_DKP.txt");
 
-        Base.click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div[3]/div/div/div/div[2]/div[2]/div/div/div/div/div[7]/a");
+        Base.click(xBUTTON_GO_TO_TASK);
     }
 
     @Test(enabled = true)
@@ -126,7 +128,7 @@ public class MainDKP_DEV {
         String date = Base.dateNow();
         String end_date = Base.randomDateToday();
 // Шапка
-        Base.send("//*[@id=\":r2:\"]", Base.randomNum(5)); // Дата заключения
+        Base.send(BUTTON_1, Base.randomNum(5)); // Дата заключения
         Base.send("//*[@id=\":r5:\"]", Base.randomNum(8));
         Base.sendDate("//*[@id=\":r3:\"]", date);
         Base.sendDate("//*[@id=\":r6:\"]", date);

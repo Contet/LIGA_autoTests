@@ -4,6 +4,7 @@ import dataSet.autorization.DataAutoriz;
 import dataSet.autorization.DataUsers;
 import org.openqa.selenium.WebDriver;
 import pages.BasePage;
+import pages.EGAIS.autorization.EGAIS_AutorizationPage;
 
 import static pages.autorization.LinksAutorization.*;
 import static pages.autorization.xAutorization_Dirt.*;
@@ -12,20 +13,27 @@ public class AutorizationPage extends BasePage {
     public AutorizationPage(WebDriver driver) {
         super(driver);
         this.Base = new BasePage(driver);
+        this.EGAIS = new EGAIS_AutorizationPage(driver);
+
     }
     private BasePage Base;
+    private EGAIS_AutorizationPage EGAIS;
 
-    public void login(String cabinet, String user){
+    public void login(String cabinet, String user, String type){
 
-        DataAutoriz userData = DataUsers.valueOf(user.toUpperCase()).getAuthData(); // Поиск по enum users
+        if (type == null){
+            type = "ОРГАНИЗАЦИЯ -1635872784";
+        }
+
+//        DataAutoriz userData = DataUsers.valueOf(user.toUpperCase()).getAuthData(); // Поиск по enum users
 
         switch (cabinet){
             case "LKL":
-                loginLKL(userData);
+                loginLKL(user, type);
                 break;
 
             case "RMDL":
-                loginRMDL(userData);
+                loginRMDL(user, type);
                 break;
 
             default:
@@ -33,30 +41,25 @@ public class AutorizationPage extends BasePage {
         }
     }
 
-    public void loginLKL(DataAutoriz user){
+    public void loginLKL(String user, String type){
         get(LINK_LKL_MAIN.getUrl());
         click(xBUTTON_LOGIN);
-        send(xFIELD_ESIA_LOGIN, user.getLogin());
-        send(xFIELD_ESIA_PASSWORD, user.getPassword());
+        EGAIS.autorization(user);
         timeOut(1000);
-        click(xBUTTON_ESIA_LOGIN);
-        timeOut(1000);
-        click(xBUTTON_TYPE_USER_LKL);
+        click(xBUTTON_TYPE_USER + type + "')]");
         timeOut(2000);
         click(xBUTTON_FINAL_LOGIN);
-        timeOut(1000);
+        timeOut(3000);
     }
 
-    public void loginRMDL(DataAutoriz user){
+    public void loginRMDL(String user, String type){
         get(LINK_RMDL_MAIN.getUrl());
         click(xBUTTON_LOGIN);
-        send(xFIELD_ESIA_LOGIN, user.getLogin());
-        send(xFIELD_ESIA_PASSWORD, user.getPassword());
-        click(xBUTTON_ESIA_LOGIN);
+        EGAIS.autorization(user);
         timeOut(1000);
-        click(xBUTTON_TYPE_USER_RMDL);
+        click(xBUTTON_TYPE_USER + type + "')]");
         timeOut(2000);
         click(xBUTTON_FINAL_LOGIN);
-        timeOut(1000);
+        timeOut(3000);
     }
 }

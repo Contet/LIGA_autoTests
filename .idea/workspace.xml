@@ -4,14 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.2.1 release">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/RMDL/PUD/DKP/Document.java" afterDir="false" />
+    <list default="true" id="01c9d0cf-929e-495d-97ae-deb44a0d4aa7" name="Changes" comment="1.2.2 release">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/LKL/POL/DataPOL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSet/LKL/POL/DataPOLdoc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EGAIS/POL/Egais_POL_Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EGAIS/autorization/EGAIS_AutorizationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EGAIS/autorization/xEGAIS_Autorization_Dirt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/cartDoc/CartDocPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/cartDoc/LinksCartDoc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/cartDoc/xCartDoc_Dirt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/POL/dev/POL_EPGU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log/log_POL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_POL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataSet/RMDL/PUD/DKP/DataDKP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataSet/RMDL/PUD/DKP/DataDKP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log/log_DKP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/log_DKP.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/RMDL/placement/PlacementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RMDL/placement/PlacementPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/autorization/AutorizationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/AutorizationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/autorization/xAutorization_Dirt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/autorization/xAutorization_Dirt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +36,8 @@
       <list>
         <option value="package-info" />
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -71,6 +84,7 @@
     "Application.Main.executor": "Run",
     "Application.Main_Dirt.executor": "Run",
     "Application.test.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
     "JAR Application.seleniumFirst-1.0-SNAPSHOT.jar.executor": "Run",
     "Maven.Tests [-v].executor": "Run",
     "Maven.Tests [clean,install].executor": "Run",
@@ -81,6 +95,9 @@
     "Maven.seleniumFirst [clean,package,-U].executor": "Run",
     "Maven.seleniumFirst [clean,package].executor": "Run",
     "Maven.seleniumFirst [clean].executor": "Run",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.DKP_POM.executor": "Debug",
@@ -112,6 +129,9 @@
     "TestNG.MainTest_Dirt.step_01.executor": "Run",
     "TestNG.Main_Nedra_DEV.executor": "Debug",
     "TestNG.Main_Nedra_ST.executor": "Debug",
+    "TestNG.POL_EPGU (1).executor": "Debug",
+    "TestNG.POL_EPGU.EPGU_POL.executor": "Debug",
+    "TestNG.POL_EPGU.executor": "Debug",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/naknyazev/IdeaProjects/My_Testing_2/target/generated-test-sources/test-annotations",
@@ -119,7 +139,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21264368",
-    "settings.editor.selected.configurable": "configurable.group.tools"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -155,7 +175,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MainPOL_DEV">
+  <component name="RunManager" selected="TestNG.POL_EPGU (1)">
     <configuration name="DKP_POM" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
       <extension name="coverage">
@@ -166,41 +186,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="PUD.DKP.dev" />
       <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.DKP_POM" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DKP_POM.full_DKP" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumFirst" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PUD.DKP.dev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PUD.DKP.dev" />
-      <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.DKP_POM" />
-      <option name="METHOD_NAME" value="full_DKP" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainDKP_DEV" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumFirst" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PUD.DKP.dev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PUD.DKP.dev" />
-      <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.MainDKP_DEV" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -241,7 +226,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPOL_DEV.step_02_Autorization_lkl" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="POL_EPGU (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumFirst" />
       <extension name="coverage">
         <pattern>
@@ -250,8 +235,42 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="POL.dev" />
-      <option name="MAIN_CLASS_NAME" value="POL.dev.MainPOL_DEV" />
-      <option name="METHOD_NAME" value="step_02_Autorization_lkl" />
+      <option name="MAIN_CLASS_NAME" value="POL.dev.POL_EPGU" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POL_EPGU" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumFirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PUD.DKP.dev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PUD.DKP.dev" />
+      <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.POL_EPGU" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POL_EPGU.EPGU_POL" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumFirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PUD.DKP.dev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PUD.DKP.dev" />
+      <option name="MAIN_CLASS_NAME" value="PUD.DKP.dev.POL_EPGU" />
+      <option name="METHOD_NAME" value="EPGU_POL" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -261,11 +280,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MainPOL_DEV" />
+        <item itemvalue="TestNG.POL_EPGU (1)" />
+        <item itemvalue="TestNG.POL_EPGU" />
         <item itemvalue="TestNG.DKP_POM" />
-        <item itemvalue="TestNG.DKP_POM.full_DKP" />
-        <item itemvalue="TestNG.MainDKP_DEV" />
-        <item itemvalue="TestNG.MainPOL_DEV.step_02_Autorization_lkl" />
+        <item itemvalue="TestNG.POL_EPGU.EPGU_POL" />
+        <item itemvalue="TestNG.MainPOL_DEV" />
       </list>
     </recent_temporary>
   </component>
@@ -369,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741688578953</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1.2.2 release">
+      <option name="closed" value="true" />
+      <created>1741698161720</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741698161720</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -394,7 +421,8 @@
     <MESSAGE value="1.1 release" />
     <MESSAGE value="1.2 release" />
     <MESSAGE value="1.2.1 release" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.2.1 release" />
+    <MESSAGE value="1.2.2 release" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.2.2 release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -485,24 +513,29 @@
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="239" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/test.java</url>
           <line>46</line>
           <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
-          <line>289</line>
+          <line>291</line>
           <option name="timeStamp" value="283" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/MainDKP_DEV.java</url>
-          <line>280</line>
+          <line>282</line>
           <option name="timeStamp" value="284" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PUD/DKP/dev/DKP_POM.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/POL/dev/POL_EPGU.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="291" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/Main_Script/Main_Dirt.java</url>
@@ -524,6 +557,8 @@
     <watches-manager>
       <configuration name="TestNG">
         <watch expression="id=\&quot;:r1v:\&quot;]&quot;);" />
+        <watch expression="driver" language="JAVA" />
+        <watch expression="xBUTTON_TYPE_USER + type + &quot;')]&quot;;" />
       </configuration>
     </watches-manager>
   </component>

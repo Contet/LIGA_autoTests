@@ -3,7 +3,7 @@
 
     <test name="BasicTests">
         <classes>
-            <class name="PUD.DKP.dev.MainDKP_DEV" />
+<!--            <class name="PUD.DKP.dev.MainDKP_DEV" />-->
         </classes>
     </test>
 

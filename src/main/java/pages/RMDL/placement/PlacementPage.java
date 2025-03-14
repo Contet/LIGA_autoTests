@@ -17,23 +17,23 @@ public class PlacementPage extends BasePage {
     public String bizKey;
 
     public void DKP(String data){
-        DataDKP doc = Document.valueOf(data.toUpperCase()).getDKPdata();
-        String date = dateNow();
+        DataDKP doc = Document.valueOf(data.toUpperCase()).getDKPdata(); // Ищем по enum документ
+        String date = dateNow(); // Сегодняшняя дата
 
 //      Выбор типа документа
         get(LINK_PLACEMENT_MAIN.getUrl());
-        send(xFIELD_FIND_DOCUMENT, "Договор купли-продажи лесных насаждений");
+        send(xFIELD_FIND_DOCUMENT, "купли"); // передаваемое значение НЕ МЕНЯТЬ, иначе будет нестабильно работать
         timeOut(3000);
         listDown(xFIELD_FIND_DOCUMENT, 1);
         click(xBUTTON_FIND_DOCUMENT);
 
 //      Блок информация о документе
-        send(xFIELD_NAME_DOCUMENT, doc.getName());
+        send(xFIELD_NAME_DOCUMENT, doc.getName() + data);
         send(xFIELD_AUTOR_DOCUMENT, doc.getAutor());
 
         // Сделано для отладки по документу AUTO
         if(doc.getName() == "DKP_AUTO_"){
-            send(xFIELD_NUMBER_DOCUMENT, doc.getNumber() + date);
+            send(xFIELD_NUMBER_DOCUMENT, doc.getNumber() + randomNum(4));
             sendDate(xDATE_FIELD_DOCUMENT, doc.getDate() + date);
         }
         else {
