@@ -1,19 +1,20 @@
-package PUD.DKP.dev;
+package PUD.ARENDA.dev;
 
 import browser.Browser;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 import pages.RMDL.PUD.DKP.DKP;
 import pages.RMDL.cartDoc.CartDocPage;
 import pages.RMDL.placement.PlacementPage;
 import pages.autorization.AutorizationPage;
 
-
-public class DKP_POM {
+public class Rent_POM {
 
     private WebDriver driver;
     private PlacementPage Placement;
-    private DKP DKP;
+    private pages.RMDL.PUD.DKP.DKP DKP;
     private AutorizationPage Auth;
     private CartDocPage CartDoc;
 
@@ -33,9 +34,9 @@ public class DKP_POM {
 
     @Test
     public void full_DKP(){
-        Auth.login("RMDL", "Zazubenko", "Юридическое лицо");
-        Placement.DKP("Auto");
+        Auth.login("RMDL", "Zazubenko", "ОРГАНИЗАЦИЯ 1181280564");
+        Placement.rent("Auto");
         CartDoc.waitTaskFirst();
-        DKP.fill("auto");
+
     }
 }

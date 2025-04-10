@@ -154,3 +154,32 @@ https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudE
 Ссылка на форму ПУД 'Извлечение сведений': 
 https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=a009075a-ffe3-11ef-a9ef-66b1b5185b8c&key=formKeyPudExtractInformation&process=pud_digitize_doc
 РВ-250313-04:00025
+РВ-250314-05:00030
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=d9dbf5a3-00e4-11f0-94e1-c6ae2aa88b95&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250320-04:00016
+https://fgislk-test.gov.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=6bd26147-0599-11f0-a168-e2aa34a611d6&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250324-01:00016
+РВ-250324-01:00028
+Ссылка на форму ПУД 'Извлечение сведений': 
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=0eb66cf9-088e-11f0-92a0-1a97064ea372&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250402-03:00020
+Ссылка на форму ПУД 'Извлечение сведений': 
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=af82f05b-0fb0-11f0-aae0-36907de11f10&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250402-03:00087
+Ссылка на форму ПУД 'Извлечение сведений': 
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=38a14fd3-0fd2-11f0-aae0-36907de11f10&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250402-03:00088
+Ссылка на форму ПУД 'Извлечение сведений': 
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=d252685a-0fd2-11f0-b8ef-daf6de593e06&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250402-03:00089
+Ссылка на форму ПУД 'Извлечение сведений': 
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=3c98108d-0fd3-11f0-b52f-5299cbcc64ca&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250402-03:00090
+Ссылка на форму ПУД 'Извлечение сведений': 
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=1b859cda-0fd4-11f0-aae0-36907de11f10&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250403-04:00017
+Ссылка на форму ПУД 'Извлечение сведений': 
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=40a2bc3b-106a-11f0-b52f-5299cbcc64ca&key=formKeyPudExtractInformation&process=pud_digitize_doc
+РВ-250403-04:00018
+Ссылка на форму ПУД 'Извлечение сведений': 
+https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/pud/task?target=formKeyPudExtractInformation&id=551e9cdf-106b-11f0-aae0-36907de11f10&key=formKeyPudExtractInformation&process=pud_digitize_doc

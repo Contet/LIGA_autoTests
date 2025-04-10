@@ -9,7 +9,7 @@ import pages.RMDL.placement.PlacementPage;
 import pages.autorization.AutorizationPage;
 
 
-public class DKP_POM {
+public class MainRent_dev {
 
     private WebDriver driver;
     private PlacementPage Placement;
@@ -33,9 +33,9 @@ public class DKP_POM {
 
     @Test
     public void full_DKP(){
-        Auth.login("RMDL", "Zazubenko", "Юридическое лицо");
-        Placement.DKP("Auto");
+        Auth.login("RMDL", "Zazubenko", "ОРГАНИЗАЦИЯ 1181280564");
+        Placement.rent("Auto");
         CartDoc.waitTaskFirst();
-        DKP.fill("auto");
+
     }
 }

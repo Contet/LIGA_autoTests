@@ -52,7 +52,7 @@ public class MainDKP_ST {
 
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void step_02_post_DKP() {
         for (int i = 1; i < 2; i++) {
             String date = Base.dateNow();
@@ -91,7 +91,7 @@ public class MainDKP_ST {
         }
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void step_03_wait_outputDKP() {
 
         Base.timeOut(5000);
@@ -114,9 +114,9 @@ public class MainDKP_ST {
     public void step_04_output_DKP() {
 
 
-        Base.get(urlPudOutputter);
+//        Base.get(urlPudOutputter);
 
-//        Main.Get("https://fgislk-test.gov.ru/rmdl/#/workplace/pud/view/7b2ef702-f9ca-11ef-95d2-6e819d5ee989");
+        Base.get("https://fgislk-test.gov.ru/rmdl/#/workplace/pud/view/6bd26147-0599-11f0-a168-e2aa34a611d6");
         Base.timeOut(3000);
         Base.refresh();
         Base.timeOut(3000);
@@ -133,7 +133,7 @@ public class MainDKP_ST {
         Base.click("/html/body/div[1]/div[3]/main/div[1]/div[2]/div[1]/div/div/form/div/div/div[1]/div[8]/div[2]/div/button");
 
         try {
-            Base.send("//*[@id=\":r33:\"]", "7708237747");
+            Base.send("//*[@id=\":r3c:\"]", "7708237747");
         } catch (Exception e) {
             Base.send("//*[@id=\":r43:\"]", "7708237747");
         }
@@ -173,6 +173,7 @@ public class MainDKP_ST {
         Base.timeOut(2000);
         Base.click("/html/body/div[3]/div[3]/div/div[1]/form/div/div[2]/button");
         Base.timeOut(3000);
+
         try {
             Base.click("/html/body/div[3]/div[3]/div/div[1]/div/div[2]/div[2]/div/div/div/div[1]/div[1]/span");
             Base.timeOut(1000);
@@ -258,6 +259,7 @@ public class MainDKP_ST {
         Base.listUp("//*[@id=\":r52:\"]", 2);
         Base.send("//*[@id=\":r5h:\"]", "40"); // Лесоустроительный номер выдела
         //
+        Base.listDown("//*[@id=\":r51:\"]", 8); // Урочище
         Base.send("//*[@id=\":r53:\"]", "500");
         Base.listDown("//*[@id=\":r5a:\"]", 1);
         Base.listDown("//*[@id=\":r5c:\"]", 1);
@@ -279,9 +281,10 @@ public class MainDKP_ST {
         Base.click("//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div[1]/div/div/form/div/div/div[4]/div/button[2]");
         Base.timeOut(2000);
         Base.click("/html/body/div[3]/div[3]/div/div[2]/button");
+
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void step_05_wait_intoGLR() {
         Base.timeOut(3000);
         Base.get(cartDoc);
@@ -297,7 +300,7 @@ public class MainDKP_ST {
         Base.timeOut(3000);
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void step_06_intoGLR() {
 
         Base.get(urlIntoGLR);

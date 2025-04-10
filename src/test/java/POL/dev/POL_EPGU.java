@@ -40,8 +40,7 @@ public class POL_EPGU {
     @Test
     public void EPGU_POL(){
         Base.get("http://svcdev-beta.test.gosuslugi.ru/632762/1/form");
-        AuthEgais.autorization("Orlova");
-        EGAIS.POL(1,"in", "Архангельское");
-
+        AuthEgais.autorization("Orlova", "");
+        EGAIS.POL(1,"in", "Архангельское", "48");
     }
 }

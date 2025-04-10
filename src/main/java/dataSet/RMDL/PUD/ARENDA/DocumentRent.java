@@ -1,18 +1,18 @@
-package dataSet.RMDL.PUD.DKP;
+package dataSet.RMDL.PUD.ARENDA;
 
-public enum Document {
+public enum DocumentRent {
 
     AUTO(
-            new DataDKP(
-                "DKP_AUTO_",
+            new DataRent(
+                "Rent_AUTO_",
                 "ОРГАНИЗАЦИЯ -1635872784",
-                "DKP_auto_doc_no_",
+                "Rent_auto_doc_no_",
                 null
             )
     ),
 
     PROD(
-            new DataDKP(
+            new DataRent(
                     "",
                     "",
                     "",
@@ -22,15 +22,15 @@ public enum Document {
 
 
     // Поле для хранения данных документа
-    private final DataDKP dkpData;
+    private final DataRent rentData;
 
     // Конструктор enum
-    Document(DataDKP dkpData) {
-        this.dkpData = dkpData;
+    DocumentRent(DataRent rentData) {
+        this.rentData = rentData;
     }
 
     // Метод для получения данных документа
-    public DataDKP getDKPdata() {
-        return dkpData;
+    public DataRent getRentData() {
+        return rentData;
     }
 }

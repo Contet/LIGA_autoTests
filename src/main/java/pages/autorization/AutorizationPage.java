@@ -47,7 +47,7 @@ public class AutorizationPage extends BasePage {
         EGAIS.autorization(user);
         timeOut(1000);
         click(xBUTTON_TYPE_USER + type + "')]");
-        timeOut(2000);
+        timeOut(3000);
         click(xBUTTON_FINAL_LOGIN);
         timeOut(3000);
     }
@@ -57,8 +57,10 @@ public class AutorizationPage extends BasePage {
         click(xBUTTON_LOGIN);
         EGAIS.autorization(user);
         timeOut(1000);
+//        System.out.println(xBUTTON_TYPE_USER + type + "']");
+//        click(xBUTTON_TYPE_USER + type + "']");
         click(xBUTTON_TYPE_USER + type + "')]");
-        timeOut(2000);
+        timeOut(3000);
         click(xBUTTON_FINAL_LOGIN);
         timeOut(3000);
     }

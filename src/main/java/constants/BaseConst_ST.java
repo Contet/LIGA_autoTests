@@ -32,7 +32,7 @@ public class BaseConst_ST {
     // Локаторы для завершения создания заявки
     public static final String xDOCUMENT_TYPE_SELECTOR = "/html/body/div[3]/div[3]/div/main/form/div/div[1]/div/div/div/div/input";
     public static final String xFINAL_SUBMIT_BUTTON = "/html/body/div[3]/div[3]/div/footer/button[2]";
-    public static final String xFINISH_BUTTON = "//*[@id=\"app\"]/div[3]/main/div/div[1]/div/div[3]/button[2]";
+    public static final String xFINISH_BUTTON = "/html/body/div[1]/div[3]/main/div/div[1]/div/div[3]/button[2]";
 
     // Локатор для получения bizKey
     public static final String xBIZ_KEY_TEXT = "/html/body/div[1]/div[3]/main/div/div[1]/div/div[1]/section/div[2]/p[2]";

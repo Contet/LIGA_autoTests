@@ -53,14 +53,16 @@ public class MainPOL_DEV {
 
     @Test
     public void step_03_post_POL() {
-        for (int i = 1; i < 2; i++) {
+        for (int i = 2; i < 5; i++) {
             Base.get(xDEV_START_PAGE);
+            Base.refresh();
             Base.timeOut(2000);
 
             Base.click(xDOCUMENT_LINK);
             Base.click(xDOCUMENT_DETAILS);
 
             Base.send(xDOCUMENT_INPUT, "120225-00040");
+            Base.timeOut(2000);
             Base.click(xDOCUMENT_SEARCH_BUTTON);
 
             Base.timeOut(3000);
@@ -78,7 +80,7 @@ public class MainPOL_DEV {
             WebElement fileInput = driver.findElement(By.xpath(xFILE_INPUT));
             ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('hidden');", fileInput);
 
-            Base.send(xFILE_INPUT, "C:\\Users\\naknyazev\\Documents\\ПОЛЫ с СП\\forestDevelopmentProject(" + i + ").xml");
+            Base.send(xFILE_INPUT, "C:\\Users\\naknyazev\\Documents\\ПОЛЫ с СП\\old\\forestDevelopmentProject(" + i + ").xml");
 
             Base.click(xSIGN_BUTTON);
             Base.click("/html/body/div[4]/div[3]/div/div/div[2]/div/div");
@@ -116,7 +118,7 @@ public class MainPOL_DEV {
             Base.writeTextToFile(bizKey, "log_POL.txt");
         }
     }
-    @Test
+    @Test(enabled = false)
     public void step_04_Autorization_rmdl(){
 
         driver.get(String.valueOf("https://dev.fgislk.at-consulting.ru/rmdl/#/workplace/documents"));
@@ -138,7 +140,7 @@ public class MainPOL_DEV {
         Base.timeOut(1000);
 
     }
-    @Test
+    @Test(enabled = false)
     public void step_05_Wait_POL(){
         String xTASK = "//*[@id=\"app\"]/div[3]/main/div[1]/div[2]/div/div[3]/div/div/div/div[2]/div[2]/div/div/div/div/div[7]/a";
 
@@ -149,7 +151,7 @@ public class MainPOL_DEV {
         Base.waitTask(xTASK);
     }
 
-    @Test
+    @Test(enabled = false)
     public void step_06_POL_1(){
         Base.timeOut(2000);
         Base.click("/html/body/esia-root/div/esia-login/div/div[1]/form/esia-login-found/div/div[2]/button");
@@ -161,7 +163,7 @@ public class MainPOL_DEV {
         step_05_Wait_POL();
     }
 
-    @Test
+    @Test(enabled = false)
     public void step_07_POL_2(){
         Base.timeOut(2000);
 
